@@ -19,6 +19,10 @@ depending on the time t.
 
     w(t) = exp(k(t-t\_0)) - 1 for t > t\_0
 
+The weighting function is applied at each time t that a users trades occur, trades that
+happened close to t\_0 are weighted close to 0 and trades that happen most recently have
+the most weight (exponentially more).
+
 # License
 
 To Be Determined
