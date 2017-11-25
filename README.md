@@ -22,14 +22,15 @@ give various details about it without giving competitors much.
 
 The formulatoin should be kept out of public whitepaper.
 
-    w(t) = exp(k(t-t\_0)) - 1 for t > t\_0
+    w(t) = exp(k(t-t\_0)) - 1 for t > t\_0, k > 0
 
 The weighting function is applied at each time t that a users trades occur, trades that
 happened close to t\_0 are weighted close to 0 and trades that happen most recently have
 the most weight (exponentially more).
 
-So if a user `u` has 10 trades, we will need the values w(t) at all of those 10
-times `t\_1 .. t\_10` .
+So if a user `u` has 10 trades in the time frame that the ranking algorithm
+will use (still undecided, lets call it T), we will need the values w(t) at all
+of those 10 times `t\_1 .. t\_10` .
 
 # License
 
