@@ -32,6 +32,14 @@ So if a user `u` has 10 trades in the time frame that the ranking algorithm
 will use (still undecided, lets call it T), we will need the values w(t) at all
 of those 10 times `t\_1 .. t\_10` .
 
+# Preventing Scammer
+
+Traders will inevitably try to game the system and so the algorithm needs
+various protections against that. For instance, there will be a minimum amount
+of trades and miniumum amount of time that a user needs to be in the system, to
+assign a rank. Otherwise, brand new "spam accounts" with one profitable trade
+will be ranked too highly by the system.
+
 # License
 
 To Be Determined
