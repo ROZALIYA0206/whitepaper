@@ -26,7 +26,12 @@ The formulatoin should be kept out of public whitepaper.
 
 The weighting function is applied at each time t that a users trades occur, trades that
 happened close to t\_0 are weighted close to 0 and trades that happen most recently have
-the most weight (exponentially more).
+the most weight (exponentially more). If this weighting function is found to still
+weight older traders too much, and we want an even stronger exponential weighting
+to recent trades, a "supergaussian" should be used:
+
+
+    w'(t) = exp(k(t-t\_0)^2) - 1 for t > t\_0, k > 0
 
 So if a user `u` has 10 trades in the time frame that the ranking algorithm
 will use (still undecided, lets call it T), we will need the values w(t) at all
