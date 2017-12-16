@@ -17,6 +17,7 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 <img src="https://i.imgur.com/TrLFMkn.png">
 </center>
 <br>
+
 #### 1. Hybrid Proof of Authority - Proof of Stake Model
 
 The Proof of Authority model provides one of the highest levels of security as an attacker with unwanted connection or hacked authority can not overwhelm the entire network potentially reverting or disrupting all transactions. By allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
