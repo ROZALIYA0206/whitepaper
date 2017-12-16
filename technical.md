@@ -24,11 +24,20 @@ This paper introduces an architecture, the Rublix chain and the Hedge DApp which
 
 #### 2.2 Node Weight
 
-We anticpate a ranking algorithm to reward nodes that provide consistant accurate information.
+We anticpate a ranking algorithm to reward nodes which are truthful and provide consistant accurate information. Nodes with a higher reputation will be prioritized to provide data over its weaker brothers.
 
-### Remaining Trustless
+#### 2.3 Remaining Trustless
 
 We introduce a node layer with real-time market data integration using multiple data sources to reach value consensus.
+
+#### 2.4 Ethereum Prototype Contracts
+
+We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles we run into three major problems:
+```
+1. Inability to obtain data in real-time
+2. Centralized API source removes trust factor
+3. Expensive GAS fees on the Ethereum network
+```
 
 
 ### Disclaimer 
