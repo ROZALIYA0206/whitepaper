@@ -9,8 +9,14 @@ Lack of on-chain resources have put a strain on complex blockchain innovation an
 
 This Rublix whitepaper introduces an architecture which fundamentally sets itself apart from the rest of the existing blockchains by integrating a strategic consensus method for reliable market data accessible on-chain.
 
-Rublix is a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and making appropriate final decisions based on arithmetic calculations. This gives traders, fund managers and investors the ability to write smart contracts which will execute based on an underlying market price of choice.
+Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and using a consensus agreement to determine the final accurate value. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency and other markets.
 
+#### Market Data Consensus Model
+<br>
+<center>
+<img src="https://i.imgur.com/TrLFMkn.png">
+</center>
+<br>
 #### 1. Hybrid Proof of Authority - Proof of Stake Model
 
 The Proof of Authority model provides one of the highest levels of security as an attacker with unwanted connection or hacked authority can not overwhelm the entire network potentially reverting or disrupting all transactions. By allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
