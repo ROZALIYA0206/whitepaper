@@ -1,4 +1,5 @@
-# __Rublix__
+<img src="https://i.imgur.com/mpgAQZc.png">
+
 ## Whitepaper
 
 #### Abstract
