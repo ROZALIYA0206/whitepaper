@@ -22,7 +22,7 @@ This paper introduces an architecture, the Rublix chain and the Hedge DApp which
 
 ### 2. Market Data Consensus Model
 
-![alt text](https://i.imgur.com/TrLFMkn.png "Market Data Model")
+![alt text](https://i.imgur.com/1ew2b6H.png "Market Data Model")
 
 #### 2.2 Node Weight
 
@@ -34,13 +34,48 @@ We introduce a node layer with real-time market data integration using multiple 
 
 #### 2.4 Ethereum Prototype Contracts
 
-We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles we run into three major problems:
+We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into three major problems:
+
 ```
 1. Inability to obtain data in real-time
 2. Centralized API source removes trust factor
 3. Expensive GAS fees on the Ethereum network
 ```
 
+An example of one of our test Smart Contracts is demonstrated below:
+
+```
+pragma solidity ^0.4.11;
+import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
+
+contract ExampleContract is usingOraclize {
+
+    string public AAPL;
+    event updatedPrice(string price);
+    event newOraclizeQuery(string description);
+
+    function ExampleContract() payable {
+        updatePrice();
+    }
+
+    function __callback(bytes32 myid, string result) {
+        if (msg.sender != oraclize_cbAddress()) throw;
+        EURGBP = result;
+        updatedPrice(result);
+    }
+
+    function updatePrice() payable {
+        if (oraclize_getPrice("URL") > this.balance) {
+            newOraclizeQuery("Oraclize query was NOT sent, please add some ETH to cover for the query fee");
+        } else {
+            newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
+            oraclize_query("URL", "json(https://www.quandl.com/api/v3/datatables/SHARADAR/SEP.json?ticker=AAPL&api_key=<YOURAPIKEY>)");
+        }
+    }
+}
+```
+
+By integrating the data supply system into the Nodes at genesis we are able to overcome these issues on the Rublix Blockchain.
 
 ### Disclaimer 
 
