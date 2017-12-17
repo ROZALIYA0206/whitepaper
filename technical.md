@@ -22,7 +22,9 @@ This paper introduces an architecture, the Rublix chain and the Hedge DApp which
 
 ### 2. Market Data Consensus Model
 
-![alt text](https://i.imgur.com/1ew2b6H.png "Market Data Model")
+<p align="center">
+<img src="https://i.imgur.com/1ew2b6H.png">
+</p>
 
 #### 2.2 Node Weighting
 
@@ -35,7 +37,9 @@ Rublix will attempt to providing reputable data on-chain by:
 * Developing a strong, statistics based reputation engine which incorporates a degree of machine learning in future iterations
 * Developing a scalable, decentralized reputation score system which allows the network to store historically informed reputation scores across all nodes, or so that nodes are enabled to inquire about reputation information via other nodes which have transacted with the agent in question
 
-![alt text](https://i.imgur.com/8ZQQ2dj.png "Reputation")
+<p align="center">
+<img src="https://i.imgur.com/8ZQQ2dj.png">
+</p>
 
 #### 2.3 Remaining Trustless
 
