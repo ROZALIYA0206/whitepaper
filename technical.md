@@ -35,6 +35,8 @@ Rublix will attempt to providing reputable data on-chain by:
 * Developing a strong, statistics based reputation engine which incorporates a degree of machine learning in future iterations
 * Developing a scalable, decentralized reputation score system which allows the network to store historically informed reputation scores across all nodes, or so that nodes are enabled to inquire about reputation information via other nodes which have transacted with the agent in question
 
+![alt text](https://i.imgur.com/8ZQQ2dj.png "Reputation")
+
 #### 2.3 Remaining Trustless
 
 We introduce a node layer with real-time market data integration using multiple data sources to reach value consensus.
