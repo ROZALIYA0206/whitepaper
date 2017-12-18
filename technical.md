@@ -14,11 +14,19 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 
 ### 1. Hybrid Consensus Algorithm
 
-Proof of Authority x Proof of Stake Model
+Proof of Authority // Proof of Stake Model
 
-The Proof of Authority model provides one of the highest levels of security as an attacker with unwanted connection or hacked authority can not overwhelm the entire network potentially reverting or disrupting all transactions. By allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
+The Proof of Authority model provides one of the highest levels of security as an attacker with unwanted connection or hacked authority can not overwhelm the entire network potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
 
-This paper introduces an architecture, the Rublix chain and the Hedge DApp which showcases the power of the Rublix Blockchain.
+Benefits of the Rublix Consensus Model:
+
+```
+1. Lower transaction fees
+2. Energy efficent
+3. More secure than traditional PoW protocols
+```
+
+We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
 
 ### 2. Market Data Consensus Model
 
@@ -26,11 +34,11 @@ This paper introduces an architecture, the Rublix chain and the Hedge DApp which
 <img src="https://i.imgur.com/1ew2b6H.png">
 </p>
 
-#### 2.2 Node Weighting
+#### 2.2 Node/Validator Weighting
 
 We anticpate a reputation algorithm to reward nodes which are truthful and provide consistant accurate information. Nodes with a higher reputation will be prioritized to provide data over its weaker brothers.
 
-Rublix will attempt to providing reputable data on-chain by:
+Rublix will attempt to provide reputable data on-chain by:
 
 * Providing agent incentives across the network
 * Incorporating stake disincentives to put a cost on malicious behavior
@@ -92,7 +100,9 @@ By integrating the data supply system into the Nodes at genesis we are able to o
 
 #### 3. Releases
 
-Genesis - The first release of the Rublix Blockchain.
+##### Genesis
+
+The first release of the Rublix Blockchain will be established by 20 internal validators.
 
 ### Disclaimer 
 
