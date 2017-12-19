@@ -18,6 +18,10 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 
 In order to gain worldwide use, our blockchain will need to be flexible enough to meet the following criteria:
 
+#### Incredible UX
+
+Due to the complex nature of the Blockchain, in order to attract the masses to the platform, users must be welcomed with an interface which is easy to navigate, understand and get used to.
+
 #### Scalability
 
 Disruptive projects like Facebook, Uber and Youtube all handle thousands if not millions of active connections on the daily. Current mainstream Blockchain projects are unable to handle such loads and therefore a platform that can handle a large amount of active users simultaneously is essential to future success.
@@ -26,19 +30,15 @@ Disruptive projects like Facebook, Uber and Youtube all handle thousands if not 
 
 Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
 
-All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+All Blockchain projects are subject to bugs, even with the most rigorous amount of testing. The platform must be robust enough to fix bugs quickly when they inevitably occur.
 
 #### Low Latency
 
-A good user experience demands reliable feedback with delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing non-blockchain alternatives.
+A good UX demands reliable feedback with a delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing centralized alternatives.
 
-#### Parallel Performance
+#### Coordinated Performance
 
 Large scale applications need to divide the workload across multiple CPUs and computers. Validators will require an expansion method which does not sacrifice security.
-
-#### Incredible UX
-
-Due to the complex nature of the Blockchain, in order to attract the masses newcomers to the platform must be welcomed with an interface which is easy to navigate and understand.
 
 -------------------
 
