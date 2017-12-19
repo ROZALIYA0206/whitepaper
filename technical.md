@@ -14,7 +14,7 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 
 ----------------------------------------
 
-### Developing a High Quality Blockchain
+### Developing an Efficient and High Quality Blockchain
 
 In order to gain worldwide use, our blockchain will need to be flexible enough to meet the following criteria:
 
