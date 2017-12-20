@@ -145,6 +145,7 @@ Embedded into the Rublix software is the election of block producers. Before any
 ### Disclaimer 
 
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided as is. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
+
 1. Warranties of merchantability, fitness for a particular purpose, suitability, usage, title or non-infringement.
 2. The contents of this white paper are free from error or misinformation.
 3. That such contents will not infringe third-party rights.
