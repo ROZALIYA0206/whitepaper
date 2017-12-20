@@ -134,6 +134,14 @@ By integrating the data supply system into the Nodes at genesis we are able to o
 
 The first release of the Rublix Blockchain will be established by 20 internal validators.
 
+#### Governance Model
+
+Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An Rublix software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+
+A blockchain based on the Rublix software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+
+Embedded into the Rublix software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+
 ### Disclaimer 
 
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided “as is”. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
