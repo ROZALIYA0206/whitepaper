@@ -136,7 +136,7 @@ The first release of the Rublix Blockchain will be established by 20 internal va
 
 #### Governance Model
 
-Governance is the process by which people reach consensus on subjective matters that cannot be captured entirely by software algorithms. An Rublix software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
+Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of an initial few in order to create the genesis block. The Rublix software-based blockchain implements a governance process that efficiently directs the existing influence of block producers. Absent a defined governance process, prior blockchains relied ad hoc, informal, and often controversial governance processes that result in unpredictable outcomes.
 
 A blockchain based on the Rublix software recognizes that power originates with the token holders who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
