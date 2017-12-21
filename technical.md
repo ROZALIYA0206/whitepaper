@@ -40,7 +40,7 @@ Large scale applications need to divide the workload across multiple CPUs and co
 
 # 1. Hybrid Consensus Algorithm
 
-Proof of Authority // Proof of Stake Model
+#### Proof of Authority / Proof of Stake Model
 
 The Proof of Authority model provides one of the highest levels of security as an attacker with unwanted connection or hacked authority can not overwhelm the entire network potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
 
@@ -60,9 +60,9 @@ We anticipate validators to be invite only. To start the chain, we will assign 2
 <img src="https://i.imgur.com/1ew2b6H.png">
 </p>
 
-#### 2.2 Node/Validator Weighting
+### 2.2 Node/Validator Weighting
 
-We anticpate a reputation algorithm to reward nodes which are truthful and provide consistant accurate information. Nodes with a higher reputation will be prioritized to provide data over its weaker brothers.
+We anticpate a reputation algorithm to reward validators which are truthful and provide consistant accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
 
 Rublix will attempt to provide reputable data on-chain by:
 
@@ -75,11 +75,11 @@ Rublix will attempt to provide reputable data on-chain by:
 <img src="https://i.imgur.com/8ZQQ2dj.png">
 </p>
 
-#### 2.3 Remaining Trustless
+### 2.3 Remaining Trustless
 
-We introduce a node layer with real-time market data integration using multiple data sources to reach value consensus.
+We introduce a node layer with real-time market data integration using multiple data sources to reach value consensus. The values are not always based on averages but 
 
-#### 2.4 Ethereum Prototype Contracts
+### 2.4 Ethereum Prototype Contracts
 
 We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into three major problems:
 
@@ -126,15 +126,15 @@ By integrating the data supply system into the Nodes at genesis we are able to o
 
 # 3. Releases
 
-#### Genesis
+### Genesis
 
 The first release of the Rublix Blockchain will be established by 20 internal validators.
 
 # 4. Governance Model
 
-Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the invitee. The users stake can be gifted or purchased on an exchange.
+Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the existing validator who elected them. The agents stake can be gifted or purchased on an exchange.
 
-A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. who delegate that power to the block producers. The block producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
 Embedded into the Rublix software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
