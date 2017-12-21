@@ -12,9 +12,7 @@ This Rublix whitepaper introduces an architecture which fundamentally sets itsel
 
 Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and using a consensus agreement to determine the final accurate value. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency and other markets.
 
-----------------------------------------
-
-### Developing an Efficient and High Quality Blockchain
+# Developing an Efficient and High Quality Blockchain
 
 In order to gain worldwide use, our blockchain will need to be flexible enough to meet the following criteria:
 
@@ -40,9 +38,7 @@ A good UX demands reliable feedback with a delay of no more than a few seconds. 
 
 Large scale applications need to divide the workload across multiple CPUs and computers. Validators will require an expansion method which does not sacrifice security.
 
--------------------
-
-### 1. Hybrid Consensus Algorithm
+# 1. Hybrid Consensus Algorithm
 
 Proof of Authority // Proof of Stake Model
 
@@ -58,7 +54,7 @@ Benefits of the Rublix Consensus Model:
 
 We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
 
-### 2. Market Data Consensus Model
+# 2. Market Data Consensus Model
 
 <p align="center">
 <img src="https://i.imgur.com/1ew2b6H.png">
@@ -128,13 +124,13 @@ contract ExampleContract is usingOraclize {
 
 By integrating the data supply system into the Nodes at genesis we are able to overcome these issues on the Rublix Blockchain.
 
-#### 3. Releases
+# 3. Releases
 
-##### Genesis
+#### Genesis
 
 The first release of the Rublix Blockchain will be established by 20 internal validators.
 
-#### Governance Model
+# 4. Governance Model
 
 Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the invitee. The users stake can be gifted or purchased on an exchange.
 
@@ -142,7 +138,7 @@ A blockchain based on the Rublix software recognizes that power originates withi
 
 Embedded into the Rublix software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
-#### Upgrading and Maintaining the Protocol
+# 5. Upgrading and Maintaining the Protocol
 
 Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent time has passed with no software issues, the validators will then be able to extend invites to the public. This method will allow us to test the network sufficently and prevent hard forks from occuring at early stages.
 
@@ -152,11 +148,11 @@ Due to the nature of blockchains, hard forks, and bugs, the initial release of t
 4. By default configuration of the Rublix Blockchain software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
 5. All validators that do not upgrade to the new code shut down automatically.
 
-#### Emergency Updates and Changes
+# Emergency Updates and Changes
 
 The validators may accelerate the process if a software change is required to fix an extemely harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
-### Disclaimer 
+# Disclaimer 
 
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided as is. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
 
