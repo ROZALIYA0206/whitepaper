@@ -124,6 +124,16 @@ contract ExampleContract is usingOraclize {
 
 By integrating the data supply system into the Nodes at genesis we are able to overcome these issues on the Rublix Blockchain.
 
+### 2.5 Use Cases
+
+#### Inexpensive Network
+
+The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network’s security will also be cheaper due to lower market cap. 
+
+#### No Miners
+
+Because consensus lies in the validators (NODES) with no mining required, we are able to have blazing fast transaction speeds.
+
 # 3. Releases
 
 ### Genesis
