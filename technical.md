@@ -50,6 +50,7 @@ Benefits of the Rublix Consensus Model:
 1. Lower transaction fees
 2. Energy efficent
 3. More secure than traditional PoW protocols
+4. Incredible scalability
 ```
 
 We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
@@ -87,6 +88,7 @@ We have created Smart Contracts using Oraclize which demonstrate the functionali
 1. Inability to obtain data in real-time
 2. Centralized API source removes trust factor
 3. Expensive GAS fees on the Ethereum network
+4. Consensus cannot be automated
 ```
 
 An example of one of our test Smart Contracts is demonstrated below:
@@ -132,7 +134,7 @@ The hybrid consensus model provides an inexpensive way to secure the network. Us
 
 #### No Miners
 
-Because consensus lies in the validators (NODES) with no mining required, we are able to have blazing fast transaction speeds.
+Because consensus lies in the validators (NODES) with no mining required, we are able to have blazing fast transaction speeds while not having to worry about scalability.
 
 # 3. Releases
 
