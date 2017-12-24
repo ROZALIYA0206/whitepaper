@@ -23,7 +23,10 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 3. Milestone Releases
    * Rise
    * Genesis
-   * 
+   * Epilogue
+4. Governance Model
+5. Upgrading and Maintaining the Protocol
+6. Disclaimer
 
 # Developing an Efficient and High Quality Blockchain
 
