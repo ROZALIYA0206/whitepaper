@@ -10,7 +10,7 @@ Lack of on-chain resources have put a strain on complex blockchain innovation an
 
 This Rublix whitepaper introduces an architecture which fundamentally sets itself apart from the rest of the existing blockchains by integrating a strategic consensus method for reliable market data accessible on-chain.
 
-Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and using a consensus agreement to determine the final accurate value. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency and other markets.
+Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and using a consensus agreement to determine the final accurate value. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency or forex market.
 
 ### Table of Contents
 
@@ -93,7 +93,7 @@ Rublix will attempt to provide reputable data on-chain by:
 
 Incase of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
 
-We introduce a validator/node layer with real-time market data integration using multiple data sources to reach price action consensus. The values are not always based on averages but 
+We introduce a validator/node layer with real-time market data integration using multiple data sources to reach price action consensus. The values are based off validator reputation and averages from multiple real-time Websockets.
 
 ### 2.4 Ethereum Prototype Contracts
 
