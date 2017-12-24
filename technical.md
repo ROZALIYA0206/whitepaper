@@ -14,21 +14,27 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 
 ### Table of Contents
 
-1. Hybrid Concensus Algorithm
-2. Market Data Concensus Model
+1. Blockchain Mission
+   * UX
+   * Scalability
+   * Upgrading and Bug Recovery
+   * Low Latency
+   * Performance
+2. Hybrid Concensus Algorithm
+3. Market Data Concensus Model
    * Validator Weighting
    * Remaining Trustless
    * Ethereum Prototype Contracts
    * Use Cases
-3. Milestone Releases
+4. Milestone Releases
    * Rise
    * Genesis
    * Epilogue
-4. Governance Model
-5. Upgrading and Maintaining the Protocol
-6. Disclaimer
+5. Governance Model
+6. Upgrading and Maintaining the Protocol
+7. Disclaimer
 
-# Developing an Efficient and High Quality Blockchain
+# 1. Developing an Efficient and High Quality Blockchain
 
 In order to gain worldwide use, our blockchain will need to be flexible enough to meet the following criteria:
 
@@ -54,7 +60,7 @@ A good UX demands reliable feedback with a delay of no more than a few seconds. 
 
 Large scale applications need to divide the workload across multiple CPUs and computers. Validators will require an expansion method which does not sacrifice security.
 
-# 1. Hybrid Consensus Algorithm
+# 2. Hybrid Consensus Algorithm
 
 #### Proof of Authority / Proof of Stake Model
 
@@ -71,13 +77,13 @@ Benefits of the Rublix Consensus Model:
 
 We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
 
-# 2. Market Data Consensus Model
+# 3. Market Data Consensus Model
 
 <p align="center">
 <img src="https://i.imgur.com/1ew2b6H.png">
 </p>
 
-### 2.2 Validator Weighting
+### 3.2 Validator Weighting
 
 We anticpate a reputation algorithm to reward validators which are truthful and provide consistant accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
 
@@ -92,13 +98,13 @@ Rublix will attempt to provide reputable data on-chain by:
 <img src="https://i.imgur.com/8ZQQ2dj.png">
 </p>
 
-### 2.3 Remaining Trustless
+### 3.3 Remaining Trustless
 
 Incase of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
 
 We introduce a validator/node layer with real-time market data integration using multiple data sources to reach price action consensus. The values are based off validator reputation and averages from multiple real-time Websockets.
 
-### 2.4 Ethereum Prototype Contracts
+### 3.4 Ethereum Prototype Contracts
 
 We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into three major problems:
 
@@ -144,7 +150,7 @@ contract ExampleContract is usingOraclize {
 
 By integrating the data supply system into the validators level at genesis we are able to overcome these limitations on the Rublix Blockchain.
 
-### 2.5 Use Cases
+### 3.5 Use Cases
 
 #### Inexpensive Network
 
@@ -154,7 +160,7 @@ The hybrid consensus model provides an inexpensive way to secure the network. Us
 
 Because consensus lies in the validators (NODES) with no mining required, we are able to have blazing fast transaction speeds while not having to worry about scalability.
 
-# 3. Milestone Releases
+# 4. Milestone Releases
 
 Due to the nature and complexity of Blockchain technology, the Rublix project will be spread into multiple stages.
 
@@ -172,7 +178,7 @@ The first release of the Rublix Blockchain will be established with 20 internal 
 
 The Hedge platform is completely migrated onto the Rublix Blockchain. DApps are built and running efficently on the newly established chain.
 
-# 4. Governance Model
+# 5. Governance Model
 
 Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the existing validator who elected them. The agents stake can be gifted or purchased on an exchange. This ensures the newcomer is serious about becoming an elite member on the Rublix network.
 
@@ -180,7 +186,7 @@ A blockchain based on the Rublix software recognizes that power originates withi
 
 Embedded into the Rublix software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
-# 5. Upgrading and Maintaining the Protocol
+# 6. Upgrading and Maintaining the Protocol
 
 Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent time has passed with no software issues, the validators will then be able to extend invites to the public. This method will allow us to test the network sufficently and prevent hard forks from occuring at early stages.
 
@@ -194,7 +200,7 @@ Due to the nature of blockchains, hard forks, and bugs, the initial release of t
 
 The validators may accelerate the process if a software change is required to fix an extemely harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
-# Disclaimer 
+# 7. Disclaimer 
 
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided as is. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
 
