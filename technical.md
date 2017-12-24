@@ -12,6 +12,19 @@ This Rublix whitepaper introduces an architecture which fundamentally sets itsel
 
 Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and using a consensus agreement to determine the final accurate value. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency and other markets.
 
+### Table of Contents
+
+1. Hybrid Concensus Algorithm
+2. Market Data Concensus Model
+   * Validator Weighting
+   * Remaining Trustless
+   * Ethereum Prototype Contracts
+   * Use Cases
+3. Milestone Releases
+   * Rise
+   * Genesis
+   * 
+
 # Developing an Efficient and High Quality Blockchain
 
 In order to gain worldwide use, our blockchain will need to be flexible enough to meet the following criteria:
@@ -61,7 +74,7 @@ We anticipate validators to be invite only. To start the chain, we will assign 2
 <img src="https://i.imgur.com/1ew2b6H.png">
 </p>
 
-### 2.2 Node/Validator Weighting
+### 2.2 Validator Weighting
 
 We anticpate a reputation algorithm to reward validators which are truthful and provide consistant accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
 
@@ -77,6 +90,8 @@ Rublix will attempt to provide reputable data on-chain by:
 </p>
 
 ### 2.3 Remaining Trustless
+
+Incase of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
 
 We introduce a node layer with real-time market data integration using multiple data sources to reach value consensus. The values are not always based on averages but 
 
@@ -136,9 +151,13 @@ The hybrid consensus model provides an inexpensive way to secure the network. Us
 
 Because consensus lies in the validators (NODES) with no mining required, we are able to have blazing fast transaction speeds while not having to worry about scalability.
 
-# 3. Releases
+# 3. Milestone Releases
 
-### Genesis
+#### Rise
+
+Hedge Alpha platform is running at a preliminary stage using the Ethereum network using a centeralized Oracle to bring market data onto the chain for basic validation.
+
+#### Genesis
 
 The first release of the Rublix Blockchain will be established by 20 internal validators.
 
