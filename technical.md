@@ -82,8 +82,8 @@ Rublix will attempt to provide reputable data on-chain by:
 
 * Providing agent incentives across the network
 * Incorporating stake disincentives to put a cost on malicious behavior
-* Developing a strong, statistics based reputation engine which incorporates a degree of machine learning in future iterations
-* Developing a scalable, decentralized reputation score system which allows the network to store historically informed reputation scores across all nodes, or so that nodes are enabled to inquire about reputation information via other nodes which have transacted with the agent in question
+* Developing a strong, statistics powered reputation engine which incorporates a degree of machine learning in future iterations
+* Developing a scalable, decentralized reputation scoring system which allows the network to store historically informed reputation scores across all validators, or so that validators are enabled to inquire about reputation information via others which have transacted with the agent in question
 
 <p align="center">
 <img src="https://i.imgur.com/8ZQQ2dj.png">
@@ -93,7 +93,7 @@ Rublix will attempt to provide reputable data on-chain by:
 
 Incase of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
 
-We introduce a node layer with real-time market data integration using multiple data sources to reach value consensus. The values are not always based on averages but 
+We introduce a validator/node layer with real-time market data integration using multiple data sources to reach price action consensus. The values are not always based on averages but 
 
 ### 2.4 Ethereum Prototype Contracts
 
@@ -139,13 +139,13 @@ contract ExampleContract is usingOraclize {
 }
 ```
 
-By integrating the data supply system into the Nodes at genesis we are able to overcome these issues on the Rublix Blockchain.
+By integrating the data supply system into the validators level at genesis we are able to overcome these limitations on the Rublix Blockchain.
 
 ### 2.5 Use Cases
 
 #### Inexpensive Network
 
-The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network’s security will also be cheaper due to lower market cap. 
+The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network’s security will also be cheaper due to considerably lower market cap. 
 
 #### No Miners
 
@@ -153,17 +153,25 @@ Because consensus lies in the validators (NODES) with no mining required, we are
 
 # 3. Milestone Releases
 
+Due to the nature and complexity of Blockchain technology, the Rublix project will be spread into multiple stages.
+
 #### Rise
 
 The Hedge Alpha platform operates at a preliminary stage on the Ethereum network using a centeralized Oracle to bring market data onto the chain for basic validation. Consensus is reached by manually executing the Smart Contract by a 3rd party to collect data from the Oracle. The user is rewarded transaction fees as bounty.
 
 #### Genesis
 
-The first release of the Rublix Blockchain will be established by 20 internal validators.
+We will migrate from Rise to Genesis once our testnet is live, appears to be functioning appropriately, market data is implemented on-chain and is fully stable in the eyes of our core developers and auditors.
+
+The first release of the Rublix Blockchain will be established with 20 internal validators. The chain debut will feature several simple DApps and vigerous public testing will occur.
+
+#### Epilogue
+
+The Hedge platform is completely migrated onto the Rublix Blockchain. DApps are built and running efficently on the newly established chain.
 
 # 4. Governance Model
 
-Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the existing validator who elected them. The agents stake can be gifted or purchased on an exchange.
+Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the existing validator who elected them. The agents stake can be gifted or purchased on an exchange. This ensures the newcomer is serious about becoming an elite member on the Rublix network.
 
 A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
 
