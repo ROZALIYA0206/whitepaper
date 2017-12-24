@@ -155,7 +155,7 @@ Because consensus lies in the validators (NODES) with no mining required, we are
 
 #### Rise
 
-Hedge Alpha platform is running at a preliminary stage using the Ethereum network using a centeralized Oracle to bring market data onto the chain for basic validation.
+The Hedge Alpha platform operates at a preliminary stage on the Ethereum network using a centeralized Oracle to bring market data onto the chain for basic validation. Consensus is reached by manually executing the Smart Contract by a 3rd party to collect data from the Oracle. The user is rewarded transaction fees as bounty.
 
 #### Genesis
 
