@@ -21,6 +21,7 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
    * Low Latency
    * Performance
 2. Hybrid Concensus Algorithm
+   * Proof of Authority / Stake
 3. Market Data Concensus Model
    * Validator Weighting
    * Remaining Trustless
@@ -80,7 +81,7 @@ We anticipate validators to be invite only. To start the chain, we will assign 2
 # 3. Market Data Consensus Model
 
 <p align="center">
-<img src="https://i.imgur.com/1ew2b6H.png">
+<img src="https://i.imgur.com/5SjgY1H.png">
 </p>
 
 ### 3.2 Validator Weighting
@@ -95,7 +96,7 @@ Rublix will attempt to provide reputable data on-chain by:
 * Developing a scalable, decentralized reputation scoring system which allows the network to store historically informed reputation scores across all validators, or so that validators are enabled to inquire about reputation information via others which have transacted with the agent in question
 
 <p align="center">
-<img src="https://i.imgur.com/8ZQQ2dj.png">
+<img src="https://i.imgur.com/QDh4w7q.png">
 </p>
 
 ### 3.3 Remaining Trustless
