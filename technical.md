@@ -222,9 +222,13 @@ This heightened level of validation will greatly enhance traders' credibility an
 
 Hedge v2, which is planned for a late-2018 release, will run off Rublix's core blockchain. By upgrading to this unique, industry specific technology and framework, the Rublix platform will incorporate the following upgraded features:
 
-Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex projects. Real-time market data will allow blueprints to be solved on-chain.
-A reduction in dependency on the Ethereum Network and its inherent limitations.
-Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
+* Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex projects.
+
+* Real-time market data will allow blueprints to be solved on-chain.
+
+* A reduction in dependency on the Ethereum Network and its inherent limitations.
+
+* Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
 
 
 # 7. Upgrading and Maintaining the Protocol
