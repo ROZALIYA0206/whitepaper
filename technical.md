@@ -40,8 +40,9 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
      * [Proof-of-Ranking Algorithm](#)
        * [Overview](#)
        * [Implementation](#)
-7. [Upgrading and Maintaining the Protocol](#7-upgrading-and-maintaining-the-protocol)
-8. [Disclaimer](#8-disclaimer)
+7. [RBLX Token](#)
+8. [Upgrading and Maintaining the Protocol](#8-upgrading-and-maintaining-the-protocol)
+9. [Disclaimer](#9-disclaimer)
 
 # 1. Developing an Efficient and High Quality Blockchain
 
@@ -250,7 +251,7 @@ The remaining data will be automatically populated based on the fundamentals of 
 * Blueprint purchase price.
 * Ranking impact.
 
-# 7. Upgrading and Maintaining the Protocol
+# 8. Upgrading and Maintaining the Protocol
 
 Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent time has passed with no software issues, the validators will then be able to extend invites to the public. This method will allow us to test the network sufficently and prevent hard forks from occuring at early stages.
 
@@ -264,7 +265,7 @@ Due to the nature of blockchains, hard forks, and bugs, the initial release of t
 
 The validators may accelerate the process if a software change is required to fix an extemely harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
-# 8. Disclaimer 
+# 9. Disclaimer 
 
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided as is. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
 
@@ -276,6 +277,6 @@ Rublix and its affiliates shall carry no liability for damages of any kind arisi
 
 Copyright (c) 2018 Rublix Without permission, anyone may use, reproduce or distribute any material in this whitepaper for non-commercial and educational use (i.e., other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited and proper credit is given.
 
-# 9. Special Thanks
+# 10. Special Thanks
 
 Special thanks to the welcoming Ethereum community. Thank you for all the support and feedback: Jason Matthison, Ameer Rosic.
