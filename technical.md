@@ -216,7 +216,7 @@ By incorporating smart contract capabilities, Hedge v1 allows for the facilitati
 
 In our context, an Oracle is an agent that finds, validates and submits market information to the blockchain to be used by our smart contracts. When a particular value (i.e., date/time, price, etc.) is reached an event automatically triggers. The primary task of an Oracle is to provide these values to the smart contract in a secure and accurate manner.
 
-This heightened level of validation will greatly enhance traders’ credibility and potential to attract subscribers to their private channel, while at the same time filtering out poor performers with unproven track records.
+This heightened level of validation will greatly enhance traders' credibility and potential to attract subscribers to their private channel, while at the same time filtering out poor performers with unproven track records.
 
 #### Hedge v2: Proprietary Blockchain
 
