@@ -230,6 +230,22 @@ Hedge v2, which is planned for a late-2018 release, will run off Rublix's core b
 
 * Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
 
+#### Blueprint Smart Contracts
+
+Simple description of a Blueprint creation:
+
+John accesses the Hedge application, undertakes technical analysis on the BTCUSD chart and decides to post the dynamics of a trade he is going to make. He clicks “Create Blueprint” then enters the follow data:
+
+* Expiry of the smart contract - When does this trade end?
+* Category - What kind of product is it (cryptocurrency, token, equity, ETF, option, etc.)?
+* Entry and Exit points - At what price does this trade start and finish?
+* Address - Where will the RBLX tokens be distributed if this trade is successful?
+
+The remaining data will be automatically populated based on the fundamentals of the Blueprint:
+
+* Potential gain - The percentage of gain between the entry and exit points.
+* Blueprint buy-in price (See Appendix.)
+* Ranking impact (See Appendix.)
 
 # 7. Upgrading and Maintaining the Protocol
 
