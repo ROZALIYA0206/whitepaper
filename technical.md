@@ -21,7 +21,7 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
    * [Low Latency](#low-latency)
    * [Performance](#performance)
 2. [Hybrid Consensus Algorithm](#2-hybrid-consensus-algorithm)
-   * [Proof of Authority / Stake](#proof-of-authority--proof-of-stake-model)
+   * [Proof-of-Authority / Stake](#proof-of-authority--proof-of-stake-model)
 3. [Market Data Concensus Model](#3-market-data-consensus-model)
    * [Validator Weighting](#32-validator-weighting)
    * [Remaining Trustless](#33-remaining-trustless)
