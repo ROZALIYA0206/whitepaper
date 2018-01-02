@@ -204,9 +204,9 @@ Rublix will migrate its development of Decentrailzed Applications on the Rublix 
 
 Our flagship DApp, Hedge, is in development and currently being built on the Ethereum network, but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking real-time trading predictions for cryptocurrencies, stocks, options, commodities, or any other tradable product.
  
-The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader’s track record and ranking.
+The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader's track record and ranking.
  
-Users who identify a trader with a high ranking and reputation can purchase their blueprints using RBLX Tokens to gain access to that trader’s predictions. If the trader makes a correct prediction via the blueprint, they will receive the tokens from the purchasers. Otherwise, the tokens are returned to the purchaser as coded in the smart contract. The higher the trader's ranking on Hedge, the more expensive the blueprint. This ranking, reward and verification system greatly enhances traders' credibility, motivation to succeed and earning potential, in addition to filtering out poor performers with unproven track records.
+Users who identify a trader with a high ranking and reputation can purchase their blueprints using RBLX Tokens to gain access to that trader's predictions. If the trader makes a correct prediction via the blueprint, they will receive the tokens from the purchasers. Otherwise, the tokens are returned to the purchaser as coded in the smart contract. The higher the trader's ranking on Hedge, the more expensive the blueprint. This ranking, reward and verification system greatly enhances traders' credibility, motivation to succeed and earning potential, in addition to filtering out poor performers with unproven track records.
 
 #### Hedge v1: Smart Contract Integration (Blueprints)
 
@@ -220,7 +220,7 @@ This heightened level of validation will greatly enhance traders’ credibility an
 
 #### Hedge v2: Proprietary Blockchain
 
-Hedge v2, which is planned for a late-2018 release, will run off Rublix’s core blockchain. By upgrading to this unique, industry specific technology and framework, the Rublix platform will incorporate the following upgraded features:
+Hedge v2, which is planned for a late-2018 release, will run off Rublix's core blockchain. By upgrading to this unique, industry specific technology and framework, the Rublix platform will incorporate the following upgraded features:
 
 Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex projects. Real-time market data will allow blueprints to be solved on-chain.
 A reduction in dependency on the Ethereum Network and its inherent limitations.
