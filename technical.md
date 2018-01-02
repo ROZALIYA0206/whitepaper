@@ -160,7 +160,7 @@ By integrating the data supply system into the validators level at genesis we ar
 
 #### Inexpensive Network
 
-The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network’s security will also be cheaper due to considerably lower market cap. 
+The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network's security will also be cheaper due to considerably lower market cap. 
 
 #### No Miners
 
