@@ -14,31 +14,31 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 
 ### Table of Contents
 
-1. [Blockchain Mission](#)
-   * [UX](#)
-   * Scalability
-   * Upgrading and Bug Recovery
-   * Low Latency
-   * Performance
-2. Hybrid Consensus Algorithm
-   * Proof of Authority / Stake
-3. Market Data Concensus Model
-   * Validator Weighting
-   * Remaining Trustless
-   * Ethereum Prototype Contracts
-   * Use Cases
-4. Milestone Releases
-   * Rise
-   * Genesis
-     * Token Swap
-   * Epilogue
-5. Governance Model
-6. Dcentralized Applications
-   * Hedge Platform
-     * Version 1
-     * Version 2 
+1. [Blockchain Mission](#1-developing-an-efficient-and-high-quality-blockchain)
+   * [UX](#incredible-ux)
+   * [Scalability](#scalability)
+   * [Upgrading and Bug Recovery](#quick-upgrades-and-bug-recovery)
+   * [Low Latency](#low-latency)
+   * [Performance](#performance)
+2. [Hybrid Consensus Algorithm](#2-hybrid-consensus-algorithm)
+   * [Proof of Authority / Stake](#proof-of-authority--proof-of-stake-model)
+3. [Market Data Concensus Model](#3-market-data-consensus-model)
+   * [Validator Weighting](#32-validator-weighting)
+   * [Remaining Trustless](#33-remaining-trustless)
+   * [Ethereum Prototype Contracts](#34-ethereum-prototype-contracts)
+   * [Use Cases](#35use-cases)
+4. [Milestone Releases](#4-milestone-releases)
+   * [Rise](#rise)
+   * [Genesis](#genesis)
+     * [Token Swap](#token-swap)
+   * [Epilogue](#epilogue)
+5. [Governance Model](#5-governance-model)
+6. [Dcentralized Applications](#6-decentralized-applications)
+   * [Hedge Platform](#hedge-platform)
+     * [Version 1](#hedge-v1-smart-contract-integration-blueprints)
+     * [Version 2](#hedge-v2-proprietary-blockchain)
 7. Upgrading and Maintaining the Protocol
-8. Disclaimer
+8. [Disclaimer](#disclaimer)
 
 # 1. Developing an Efficient and High Quality Blockchain
 
