@@ -434,7 +434,17 @@ Let R(u,t) be the Proof-Of-Rank function describing a user u at a time t. R(u,t)
 R(u,t) = f(u,t, w(t))
 ````
 
-Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time t.
+Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time
+
+# 7. RBLX Token
+
+### Purpose
+
+The Rublix token (RBLX) will be used on the Hedge Alpha platform while in its infancy stages on Ethereum network. It will allow for an easy transition to the token swap which will take place at a later date. 
+
+### Reward Mechanism
+
+The RBLX token is used as a reward token within its eco-system.
 
 # 8. Upgrading and Maintaining the Protocol
 
