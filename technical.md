@@ -41,9 +41,9 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
      * [Proof-of-Ranking Algorithm](#)
        * [Overview](#overview)
        * [Implementation](#implementation)
-7. [RBLX Token](#)
-     * [Purpose](#)
-     * [Reward Mechanism](#)
+7. [RBLX Token](#7-rblx-token)
+     * [Purpose](#purpose)
+     * [Reward Mechanism](#reward-mechanism)
 8. [Upgrading and Maintaining the Protocol](#8-upgrading-and-maintaining-the-protocol)
 9. [Disclaimer](#9-disclaimer)
 
