@@ -4,7 +4,7 @@
 
 ### Abstract
 
-Current architectures all suffer from a number of issues: Extensibility, scalability and lack of on-chain data availability. Up until now, the primitive nature of the blockchain has posed restrictions on the development of exciting DApps. We believe these problems stem from the relationship between two very important parts of the consensus architecture, namely canonicality and validity, too closely together.
+Current architectures all suffer from a number of issues: extensibility, scalability and lack of on-chain data availability. Up until now, the primitive nature of the blockchain has posed restrictions on the development of exciting DApps. We believe these problems stem from the relationship between two very important parts of the consensus architecture, namely canonicality and validity, too closely together.
 
 Lack of on-chain resources have put a strain on complex blockchain innovation and use cases. The use of Oracles remove the true purpose of blockchain's core functionality by adding a centralized party to handle off-chain data.
 
@@ -35,7 +35,7 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 5. [Governance Model](#5-governance-model)
 6. [Dcentralized Applications](#6-decentralized-applications)
    * [Hedge Platform](#hedge-platform)
-     * [Version 1](#hedge-v1-smart-contract-integration-blueprints)
+     * [Version 1](#hedge-v1-smart-contract-integration-s)
      * [Version 2](#hedge-v2-proprietary-blockchain)
      * [Blueprint Smart Contracts](#blueprint-smart-contracts)
      * [Proof-of-Ranking Algorithm](#)
@@ -57,13 +57,13 @@ Due to the complex nature of the Blockchain, in order to attract the masses to t
 
 #### Scalability
 
-Disruptive projects like Facebook, Uber and Youtube all handle thousands if not millions of active connections on the daily. Current mainstream Blockchain projects are unable to handle such loads and therefore a platform that can handle a large amount of active users simultaneously is essential to future success.
+Disruptive projects like Facebook, Uber and Youtube all handle thousands if not millions of active connections on the daily. Current mainstream blockchain projects are unable to handle such loads and therefore a platform that can handle a large amount of active users simultaneously is essential to future success.
 
 #### Quick Upgrades and Bug Recovery
 
-Businesses building blockchain based applications need the flexibility to enhance their applications with new features.
+Businesses building blockchain-based applications need the flexibility to enhance their applications with new features.
 
-All Blockchain projects are subject to bugs, even with the most rigorous amount of testing. The platform must be robust enough to fix bugs quickly when they inevitably occur.
+All blockchain projects are subject to bugs, even with the most rigorous amount of testing. The platform must be robust enough to fix bugs quickly when they inevitably occur.
 
 #### Low Latency
 
@@ -98,13 +98,13 @@ We anticipate validators to be invite only. To start the chain, we will assign 2
 
 ### 3.2 Validator Weighting
 
-We anticpate a reputation algorithm to reward validators which are truthful and provide consistant accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
+We anticpate a reputation algorithm to reward validators which are truthful and provide consistent accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
 
 Rublix will attempt to provide reputable data on-chain by:
 
 * Providing agent incentives across the network
 * Incorporating stake disincentives to put a cost on malicious behavior
-* Developing a strong, statistics powered reputation engine which incorporates a degree of machine learning in future iterations
+* Developing a strong, statistics-powered reputation engine which incorporates a degree of machine learning in future iterations
 * Developing a scalable, decentralized reputation scoring system which allows the network to store historically informed reputation scores across all validators, or so that validators are enabled to inquire about reputation information via others which have transacted with the agent in question
 
 <p align="center">
@@ -113,13 +113,13 @@ Rublix will attempt to provide reputable data on-chain by:
 
 ### 3.3 Remaining Trustless
 
-Incase of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
+In case of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
 
 We introduce a validator/node layer with real-time market data integration using multiple data sources to reach price action consensus. The values are based off validator reputation and averages from multiple real-time Websockets.
 
 ### 3.4 Ethereum Prototype Contracts
 
-We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into four major problems:
+We have created smart contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for smart contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into four major problems:
 
 ```
 1. Inability to obtain data in real-time
@@ -333,17 +333,17 @@ Because consensus lies in the validators (NODES) with no mining required, we are
 
 # 4. Milestone Releases
 
-Due to the nature and complexity of Blockchain technology, the Rublix project will be spread into multiple stages.
+Due to the nature and complexity of blockchain technology, the Rublix project will be spread into multiple stages.
 
 #### Rise
 
-The Hedge Alpha platform operates at a preliminary stage on the Ethereum network using a centeralized Oracle to bring market data onto the chain for basic validation. Consensus is reached by manually executing the Smart Contract by a 3rd party to collect data from the Oracle. The user is rewarded transaction fees as bounty.
+The Hedge Alpha platform operates at a preliminary stage on the Ethereum network using a centeralized Oracle to bring market data onto the chain for basic validation. Consensus is reached by manually executing the smart contract by a 3rd party to collect data from the Oracle. The user is rewarded transaction fees as bounty.
 
 #### Genesis
 
 We will migrate from Rise to Genesis once our testnet is live, appears to be functioning appropriately, market data is implemented on-chain and is fully stable in the eyes of our core developers and auditors.
 
-The first release of the Rublix Blockchain will be established with 20 internal validators. The chain debut will feature several simple DApps and vigerous public testing will occur.
+The first release of the Rublix Blockchain will be established with 20 internal validators. The chain debut will feature several simple DApps and vigorous public testing will occur.
 
 ##### Token Swap
 
@@ -357,25 +357,25 @@ The Hedge platform is completely migrated onto the Rublix Blockchain. DApps are 
 
 Governance is the process by which people reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators have to be choosen by the power of a select few in order to secure the network. The Rublix software-based blockchain implements a governance process that efficiently combines a hybrid Proof of Authority and Proof of Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same amount of tokens as the existing validator who elected them. The agents stake can be gifted or purchased on an exchange. This ensures the newcomer is serious about becoming an elite member on the Rublix network.
 
-A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications, and propose hard forking changes to the underlying protocol.
+A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications and propose hard forking changes to the underlying protocol.
 
-Embedded into the Rublix software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Embedded into the Rublix software is the election of block producers. Before any change can be made to the Blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
 # 6. Decentralized Applications
 
-Rublix will migrate its development of Decentrailzed Applications onto the Rublix Blockchain.
+Rublix will migrate its development of decentrailzed applications onto the Rublix Blockchain.
 
 ### Hedge Platform
 
-Our flagship DApp, Hedge, is in development and currently being built on the Ethereum network, but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking real-time trading predictions for cryptocurrencies, stocks, options, commodities, or any other tradable product.
+Our flagship DApp, Hedge, is in development and currently being built on the Ethereum network, but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking real-time trading predictions for cryptocurrencies, stocks, options, commodities or any other tradable product.
  
-The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader's track record and ranking.
+The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "Blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the Blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader's track record and ranking.
  
-Users who identify a trader with a high ranking and reputation can purchase their blueprints using RBLX Tokens to gain access to that trader's predictions. If the trader makes a correct prediction via the blueprint, they will receive the tokens from the purchasers. Otherwise, the tokens are returned to the purchaser as coded in the smart contract. The higher the trader's ranking on Hedge, the more expensive the blueprint. This ranking, reward and verification system greatly enhances a traders credibility, motivation to succeed and earning potential, in addition to filtering out poor performers with unproven track records.
+Users who identify a trader with a high ranking and reputation can purchase their Blueprints using RBLX Tokens to gain access to that trader's predictions. If the trader makes a correct prediction via the Blueprint, they will receive the tokens from the purchasers. Otherwise, the tokens are returned to the purchaser as coded in the smart contract. The higher the trader's ranking on Hedge, the more expensive the Blueprint. This ranking, reward and verification system greatly enhances a traders credibility, motivation to succeed and earning potential, in addition to filtering out poor performers with unproven track records.
 
 #### Hedge v1: Smart Contract Integration (Blueprints)
 
-The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture, which will handle the majority of our anticipated features. Meanwhile, the Rublix blockchain will be in research and continue its potential development giving the entire Rublix platform ample room for future growth.
+The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture, which will handle the majority of our anticipated features. Meanwhile, the Rublix Blockchain will be in research and continue its potential development giving the entire Rublix platform ample room for future growth.
 
 By incorporating smart contract capabilities, Hedge v1 allows for the facilitation of outcomes for analyst Blueprints. This system will be able to compare market predictions coded into each smart contract using Oracles, and then execute positive or negative rankings for the trader based on the end result of what took place in the market at a future point in time. Traders who correctly anticipate market movements will automatically be rewarded with positive ranking points on the Hedge platform based on the smart contract authority.
 
@@ -389,9 +389,9 @@ Hedge v2, which is planned for a late-2018 release, will run off Rublix's core b
 
 * Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex projects.
 
-* Real-time market data will allow blueprints to be solved on-chain.
+* Real-time market data will allow Blueprints to be solved on-chain.
 
-* A reduction in dependency on the Ethereum Network and its inherent limitations.
+* A reduction in dependency on the Ethereum network and its inherent limitations.
 
 * Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
 
@@ -465,7 +465,7 @@ The validators may accelerate the process if a software change is required to fi
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided as is. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
 
 1. Warranties of merchantability, fitness for a particular purpose, suitability, usage, title or non-infringement.
-2. The contents of this white paper are free from error or misinformation.
+2. The contents of this whitepaper are free from error or misinformation.
 3. That such contents will not infringe third-party rights.
  
 Rublix and its affiliates shall carry no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will Rublix or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this whitepaper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
