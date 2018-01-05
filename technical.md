@@ -39,8 +39,8 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
      * [Version 2](#hedge-v2-proprietary-blockchain)
      * [Blueprint Smart Contracts](#blueprint-smart-contracts)
      * [Proof-of-Ranking Algorithm](#)
-       * [Overview](#)
-       * [Implementation](#)
+       * [Overview](#overview)
+       * [Implementation](#implementation)
 7. [RBLX Token](#)
      * [Purpose](#)
      * [Reward Mechanism](#)
@@ -128,8 +128,21 @@ We have created Smart Contracts using Oraclize which demonstrate the functionali
 4. Consensus cannot be automated
 ```
 
+#### Resolving a Contract on the Ethereum Blockchain
+
+<p align="center">
+<img src="https://i.imgur.com/faaqoFf.png">
+</p>
+
+#### Conclusion
+
+By integrating the data supply system into the validators level at genesis we are able to overcome these limitations on the Rublix Blockchain.
+
+#### Example Code
+
 Example of a basic Blueprint contract:
 
+This contract compares the end of day data of `AAPL` using Quandl API.
 
 ```
 pragma solidity ^0.4.20;
@@ -271,7 +284,7 @@ contract RublixBluePrintContract {
 }
 ```
 
-Calling the Oracle to verify price at the end of each day:
+Calling the Oracle to verify the price at the end of each day:
 
 ````
 pragma solidity ^0.4.20;
@@ -307,8 +320,6 @@ contract RublixBluePrintPriceUpdateContract is usingOraclize {
 
 //on daily basis mon-friday we want to update the ticker price in the contrct
 ````
-
-By integrating the data supply system into the validators level at genesis we are able to overcome these limitations on the Rublix Blockchain.
 
 ### 3.5 Use Cases
 
@@ -407,13 +418,13 @@ The remaining data will be automatically populated based on the fundamentals of 
 * Ranking impact.
 
 
-#### Proof of Ranking Algorithm
+#### Proof-of-Ranking Algorithm
 
 ##### Overview
 
 The Proof of Ranking algorithm is a propritary multi variable set of forumlas which assigns each trader on the platform an overall rank. 
 
-##### Implmentation
+##### Implementation
 
 The premis of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
 
