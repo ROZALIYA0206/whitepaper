@@ -119,7 +119,7 @@ We introduce a validator/node layer with real-time market data integration using
 
 ### 3.4 Ethereum Prototype Contracts
 
-We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into three major problems:
+We have created Smart Contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for Smart Contract resolution. Unfortunately the real-time aspect will not be able to operate due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into four major problems:
 
 ```
 1. Inability to obtain data in real-time
@@ -363,7 +363,7 @@ Embedded into the Rublix software is the election of block producers. Before any
 
 # 6. Decentralized Applications
 
-Rublix will migrate its development of Decentrailzed Applications on the Rublix Blockchain.
+Rublix will migrate its development of Decentrailzed Applications onto the Rublix Blockchain.
 
 ### Hedge Platform
 
@@ -434,7 +434,7 @@ Let R(u,t) be the Proof-Of-Rank function describing a user u at a time t. R(u,t)
 R(u,t) = f(u,t, w(t))
 ````
 
-Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time
+Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
 
 # 7. RBLX Token
 
