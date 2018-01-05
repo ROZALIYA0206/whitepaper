@@ -21,7 +21,7 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
    * [Low Latency](#low-latency)
    * [Performance](#performance)
 2. [Hybrid Consensus Algorithm](#2-hybrid-consensus-algorithm)
-   * [Proof of Authority / Stake](#proof-of-authority--proof-of-stake-model)
+   * [Proof-of-Authority / Stake](#proof-of-authority--proof-of-stake-model)
 3. [Market Data Concensus Model](#3-market-data-consensus-model)
    * [Validator Weighting](#32-validator-weighting)
    * [Remaining Trustless](#33-remaining-trustless)
@@ -37,8 +37,15 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
    * [Hedge Platform](#hedge-platform)
      * [Version 1](#hedge-v1-smart-contract-integration-blueprints)
      * [Version 2](#hedge-v2-proprietary-blockchain)
-7. [Upgrading and Maintaining the Protocol](#7-upgrading-and-maintaining-the-protocol)
-8. [Disclaimer](#8-disclaimer)
+     * [Blueprint Smart Contracts](#blueprint-smart-contracts)
+     * [Proof-of-Ranking Algorithm](#)
+       * [Overview](#)
+       * [Implementation](#)
+7. [RBLX Token](#)
+     * [Purpose](#)
+     * [Reward Mechanism](#)
+8. [Upgrading and Maintaining the Protocol](#8-upgrading-and-maintaining-the-protocol)
+9. [Disclaimer](#9-disclaimer)
 
 # 1. Developing an Efficient and High Quality Blockchain
 
@@ -121,19 +128,162 @@ We have created Smart Contracts using Oraclize which demonstrate the functionali
 4. Consensus cannot be automated
 ```
 
-An example of one of our test Smart Contracts is demonstrated below:
+Example of a basic Blueprint contract:
+
 
 ```
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.20;
+
+//***********************************START
+contract RublixBluePrintContract {
+
+  struct buyerarray {
+      address etherAddress;
+      uint amount;
+  }
+
+//********************************************PUBLIC VARIABLES
+  
+  buyerarray[] public buyerlist;
+  uint public Buyers_Until_ReleaseOfContract=0;
+  uint public Total_Buyers=0;
+  uint public FeeRate=5;
+  uint public BluePrintFund = 0;
+  uint public TotalBluePrintFund = 0;
+  uint public Total_Deposits=0;
+  uint public Total_Payouts=0;
+  uint public MinDeposit=100 finney;
+  uint public entrypoint=0;
+  uint public exitpoint=0;
+  
+
+  address public owner;
+  uint Fees=0;
+  // simple single-sig function modifier
+  modifier onlyowner { if (msg.sender == owner) _ }
+
+//********************************************INIT
+
+  function RublixBluePrintContract() {
+    owner = 0xee462a6717f17c57c826f1b4d3813495296c9;  //this contract is an attachment to RublixHedger
+  }
+
+//********************************************TRIGGER
+
+  function() {
+    enter();
+  }
+  
+//********************************************ENTER
+
+  function enter() {
+    if (msg.value >10 finney) {
+
+    uint amount=msg.value;
+    uint payout;
+
+
+    // add a new participant to the system and calculate total buyers
+    uint list_length = buyerlist.length;
+    Total_Buyers=list_length+1;
+    Buyers_Until_ReleaseOfContract=40-(Total_Buyers % 40);
+    buyerlist.length += 1;
+    buyerlist[list_length].etherAddress = msg.sender;
+    buyerlist[list_length].amount = amount;
+
+
+
+    // set payout variables
+     Total_Deposits+=amount;       	//update deposited amount
+	    
+      Fees   =amount * FeeRate/100;    // 5% fee to the owner
+      amount-=amount * FeeRate/100;
+	    
+      BluePrintFund += amount*80/100;     // 80% to the balance
+      amount-=amount*80/100;  
+	    
+      TotalBluePrintFund += amount;               	//remaining to the TotalBluePrintFund
+
+
+    // payout fees to the owner
+     if (Fees != 0) 
+     {
+	uint minimal= 1990 finney;
+	if(Fees<minimal)
+	{
+      	owner.send(Fees);		//send fee to owner
+	Total_Payouts+=Fees;        //update paid out amount
+	}
+	else
+	{
+	uint Times= Fees/minimal;
+
+	for(uint i=0; i<Times;i++)   // send the fees out in packets compatible to EthVentures dividend function
+	if(Fees>0)
+	{
+	owner.send(minimal);		//send fee to owner
+	Total_Payouts+=Fees;        //update paid out amount
+	Fees-=minimal;
+	}
+	}
+     }
+ 
+    if (msg.value >= MinDeposit) 
+     {
+	     
+   //payout to participants	
+     if(list_length%40==0 && TotalBluePrintFund > 0)   				//every 40th player wins the TotalBluePrintFund if  it's not 0
+	{
+	buyerlist[list_length].etherAddress.send(TotalBluePrintFund);         //send pay out to participant
+	Total_Payouts += TotalBluePrintFund;               					//update paid out amount   
+	TotalBluePrintFund=0;									//TotalBluePrintFund update
+	}
+     else   											//you either win the TotalBluePrintFund or the balance, but not both in 1 round
+	if(uint(sha3(buyerlist[list_length].etherAddress,list_length))+uint(sha3(msg.gas)) % 4 ==0 && BluePrintFund > 0) 	//if the hashed length of your address is even, 
+	{ 												   								//which is a 25% chance, then you get paid out all balance!
+	buyerlist[list_length].etherAddress.send(BluePrintFund);        //send pay out to participant
+	Total_Payouts += BluePrintFund;               					//update paid out amount
+	BluePrintFund = 0;                      						//BluePrintFund update
+	}
+    
+    
+    
+    //enter function ends
+	}
+    }
+  }
+
+//********************************************NEW OWNER
+
+  function setOwner(address new_owner) onlyowner { //set new owner of the casino
+      owner = new_owner;
+  }
+//********************************************SET MIN DEPOSIT
+
+  function setMinDeposit(uint new_mindeposit) onlyowner { //set new minimum deposit rate
+      MinDeposit = new_mindeposit;
+  }
+//********************************************SET FEE RATE
+
+  function setFeeRate(uint new_feerate) onlyowner { //set new fee rate
+      FeeRate = new_feerate;
+  }
+}
+```
+
+Calling the Oracle to verify price at the end of each day:
+
+````
+pragma solidity ^0.4.20;
 import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
 
-contract ExampleContract is usingOraclize {
+contract RublixBluePrintPriceUpdateContract is usingOraclize {
 
-    string public AAPL;
+    string public RBLXBLCPU;
     event updatedPrice(string price);
     event newOraclizeQuery(string description);
 
-    function ExampleContract() payable {
+    function RublixBluePrintPriceUpdateContract() payable {
         updatePrice();
     }
 
@@ -145,14 +295,18 @@ contract ExampleContract is usingOraclize {
 
     function updatePrice() payable {
         if (oraclize_getPrice("URL") > this.balance) {
-            newOraclizeQuery("Query was NOT sent, please add some ETH to cover for the query fee");
+            newOraclizeQuery("Oraclize query was NOT sent, please add some ETH to cover for the query fee");
         } else {
-            newOraclizeQuery("Query was sent, standing by for the answer..");
+            newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
+            //uypdate api wiht crpto
             oraclize_query("URL", "json(https://www.quandl.com/api/v3/datatables/SHARADAR/SEP.json?ticker=AAPL&api_key=<YOURAPIKEY>)");
         }
     }
 }
-```
+
+
+//on daily basis mon-friday we want to update the ticker price in the contrct
+````
 
 By integrating the data supply system into the validators level at genesis we are able to overcome these limitations on the Rublix Blockchain.
 
@@ -222,12 +376,56 @@ This heightened level of validation will greatly enhance traders' credibility an
 
 Hedge v2, which is planned for a late-2018 release, will run off Rublix's core blockchain. By upgrading to this unique, industry specific technology and framework, the Rublix platform will incorporate the following upgraded features:
 
-Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex projects. Real-time market data will allow blueprints to be solved on-chain.
-A reduction in dependency on the Ethereum Network and its inherent limitations.
-Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
+* Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex projects.
+
+* Real-time market data will allow blueprints to be solved on-chain.
+
+* A reduction in dependency on the Ethereum Network and its inherent limitations.
+
+* Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
+
+#### Blueprint Smart Contracts
+
+Each contract is written based on parameters set by the trader using the Hedge web application. Any audience member can then 'buy' this analysis, which is called a 'Blueprint.' Depending on the outcome of the Blueprint (a correct or incorrect trade), the contract will then execute an outcome when specific parameters are carried out. The executed contract will affect the trader's reputation, ranking and RBLX earnings; RBLX is only awarded from the audience to the trader upon making a correct Blueprint, otherwise the RBLX tokens are returned to the audience. This means that audience members will only 'pay' for trader recommendations with RBLX if their Blueprint is 'true,' otherwise the smart contract will execute a 'false' outcome and return the RBLX to the audience member. 
+ 
+The purpose of the smart contract integration into the Blueprints is to create a higher level of validation, verification and transparency of analyst performance, which in turn affects their ranking and reward. Plenty of traders and analysts who make market predictions on social media, during interviews or to clients directly have uncertain ramifications for being incorrect. The Hedge platform intends to filter out poor performers and allows traders' true wisdom to speak for itself by utilizing verified smart contracts posted on the blockchain.
 
 
-# 7. Upgrading and Maintaining the Protocol
+##### *Step by step creation of a Blueprint contract:*
+
+John accesses the Hedge application, undertakes technical analysis on the BTCUSD chart and decides to post the dynamics of a trade he is going to make. He clicks “Create Blueprint” then enters the following data:
+
+* Expiration of the Contract - When does this trade end?
+* Category - What kind of product is it (cryptocurrency, token, equity, ETF, option, etc.)?
+* Entry and Exit points - At what price does this trade start and finish?
+* Address - Where will the RBLX tokens be distributed if this trade is successful?
+
+The remaining data will be automatically populated based on the fundamentals of the Blueprint:
+
+* Potential Gain - The percentage of gain between the entry and exit points.
+* Blueprint purchase price.
+* Ranking impact.
+
+
+#### Proof of Ranking Algorithm
+
+##### Overview
+
+The Proof of Ranking algorithm is a propritary multi variable set of forumlas which assigns each trader on the platform an overall rank. 
+
+##### Implmentation
+
+The premis of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
+
+Let R(u,t) be the Proof-Of-Rank function describing a user u at a time t. R(u,t) is a real-valued function where `u=(u\_1,u\_2,...,u\_N)` is an N-dimensional vector of real values.
+
+````
+R(u,t) = f(u,t, w(t))
+````
+
+Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time t.
+
+# 8. Upgrading and Maintaining the Protocol
 
 Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent time has passed with no software issues, the validators will then be able to extend invites to the public. This method will allow us to test the network sufficently and prevent hard forks from occuring at early stages.
 
@@ -241,7 +439,7 @@ Due to the nature of blockchains, hard forks, and bugs, the initial release of t
 
 The validators may accelerate the process if a software change is required to fix an extemely harmful bug or security exploit that is actively harming users. Generally speaking it could be against the constitution for accelerated updates to introduce new features or fix harmless bugs.
 
-# 8. Disclaimer 
+# 9. Disclaimer 
 
 This Rublix whitepaper is for information purposes only and is subject to change. Rublix does not guarantee the accuracy of or the conclusions reached in this white paper, and this whitepaper is provided as is. Rublix does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: 
 
@@ -253,6 +451,6 @@ Rublix and its affiliates shall carry no liability for damages of any kind arisi
 
 Copyright (c) 2018 Rublix Without permission, anyone may use, reproduce or distribute any material in this whitepaper for non-commercial and educational use (i.e., other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited and proper credit is given.
 
-# 9. Special Thanks
+# 10. Special Thanks
 
 Special thanks to the welcoming Ethereum community. Thank you for all the support and feedback: Jason Matthison, Ameer Rosic.
