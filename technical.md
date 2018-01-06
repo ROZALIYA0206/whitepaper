@@ -13,12 +13,9 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 ### Table of Contents
 
 * [Blockchain Mission](#blockchain-mission)
-  * [Attractive UX & Usability](#Attractive-UX-&-Usability)
+  * [Purpose & Functionality](#Purpose-&-Functionality)
+  * [Quality of Information](#quality-of-information) 
   * [Scalability](#scalability)
-  * [Functionality & Purpose](#Functionality-&-Purpose)
-  * [Quality of Information](#quality-of-information)
-  * [Bug Recovery & Quick Upgrades](#Bug-Recovery-&-Quick-Upgrades)
-  * [Coordinated Performance](#Coordinated-performance)
 * [Decentralized Applications](#decentralized-applications)
   * [Hedge Platform](#hedge-platform)
     * [Hedge Version 1](#hedge-v1-smart-contract-integration)
@@ -52,17 +49,17 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 
 In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
 
-#### Purpose & Funcionality
+#### Purpose & Functionality
 
 The Rublix Blockchain is being built to make use of trusted and immutable financial data posted on-chain. Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
-
-#### Scalability
-
-Disruptive centralized projects like Facebook, Uber and Youtube all handle millions of active connections simultaneously. In order to achieve similar worldwide scalability, decentralized applications built on the Rublix Blockchain will utilize a unique consensus model (structured as a hybrid between Proof-of-Authority and Proof-of-Stake) that can support massive user load.
 
 #### Quality of Information
 
 In order to ensure the highest quality of information, the appropriate incentives and consensus mechanisms must be established. Rublix is implementing a novel verification process combined with the most advanced architectures on the market to ensure utmost integrity for data validation and access.
+
+#### Scalability
+
+Disruptive centralized projects like Facebook, Uber and Youtube all handle millions of active connections simultaneously. In order to achieve similar worldwide scalability, decentralized applications built on the Rublix Blockchain will utilize a unique consensus model (structured as a hybrid between Proof-of-Authority and Proof-of-Stake) that can support massive user load.
 
 # Decentralized Applications
 
