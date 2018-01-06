@@ -13,13 +13,13 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 ### Table of Contents
 
 1. [Blockchain Mission](#1-developing-an-efficient-and-high-quality-blockchain)
-   * [UX](#incredible-ux)
+   * [Attractive UX & Usability](#incredible-ux)
    * [Scalability](#scalability)
-   * [Upgrading and Bug Recovery](#quick-upgrades-and-bug-recovery)
-   * [Low Latency](#low-latency)
-   * [Performance](#performance)
+   * [Bug Recovery & Quick Upgrades](#quick-upgrades-and-bug-recovery)
+   * [Functionality & Purpose](#functionality)
+   * [Coordinated Performance](#performance)
 2. [Hybrid Consensus Algorithm](#2-hybrid-consensus-algorithm)
-   * [Proof-of-Authority / Stake](#proof-of-authority--proof-of-stake-model)
+   * [Proof-of-Authority / Proof-of-Stake Model](#proof-of-authority--proof-of-stake-model)
 3. [Market Data Consensus Model](#3-market-data-consensus-model)
    * [Market Data Consensus Diagram](#31-market-data-consensus-diagram)
    * [Validator Weighting](#32-validator-weighting)
@@ -32,7 +32,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
      * [Token Swap](#token-swap)
    * [Epilogue](#epilogue)
 5. [Governance Model](#5-governance-model)
-6. [Dcentralized Applications](#6-decentralized-applications)
+6. [Decentralized Applications](#6-decentralized-applications)
    * [Hedge Platform](#hedge-platform)
      * [Version 1](#hedge-v1-smart-contract-integration-s)
      * [Version 2](#hedge-v2-proprietary-blockchain)
@@ -46,29 +46,33 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 8. [Upgrading and Maintaining the Protocol](#8-upgrading-and-maintaining-the-protocol)
 9. [Disclaimer](#9-disclaimer)
 
-# 1. Blockchain Mission - Developing an Efficient and High Quality Blockchain
+# 1. Blockchain Mission
 
-In order to gain worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
+In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
 
-#### Attractive UX
+#### Attractive UX & Usability
 
-Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption.
+Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption. The Rublix blockchain will be built in the widely used Python language.
 
 #### Scalability
 
 Disruptive centralized projects like Facebook, Uber and Youtube all handle millions of active connections simultaneously. In order to achieve similar worldwide scalability, decentralized applications built on the Rublix Blockchain will utilize a unique consensus model (structured as a hybrid between Proof-of-Authority and Proof-of-Stake) that can support massive user load.
 
-#### Quick Upgrades and Bug Recovery
+#### Functionality & Purpose
 
-Businesses building blockchain-based applications need the flexibility to enhance their applications with new features. Additionally, all blockchain projects are subject to bugs even with the most rigorous amount of testing. The Rublix architecture will be structured appropriately in order to upgrade functionality and fix bugs quickly and efficiently.
+There exists a need for trusted financial information. The Rublix Blockchain is being built to make use of trusted and immutable financial data posted on-chain.
 
-#### Low Latency
+#### Quality of Information
 
-A good UX demands reliable feedback with a time delay of less than a few seconds. Longer delays frustrate users and render on-chain applications less competitive than existing centralized alternatives.
+In order to ensure the highest quality of information, the appropriate incentives and consensus mechanisms must be established. Rublix  is implementing a novel verification process combined with the most well-developed architectures on the market to ensure utmost integrity for data validation and access.
+
+####  Bug Recovery and Quick Upgrades
+
+All blockchain projects are subject to bugs even with the most rigorous amount of testing. Additionally, blockchain-based businesses need the ability to enhance their applications with new features. The Rublix architecture will be structured appropriately in order to upgrade functionality and fix bugs quickly and efficiently.
 
 #### Coordinated Performance
 
-Large scale applications need to divide the workload across multiple CPUs and computers. Rublix validators will require an expansion method which does not sacrifice security.
+High-load applications need to spread the workload across multiple CPUs and computers. Rublix validators will use an expansion method that does not sacrifice performance or security.
 
 # 2. Hybrid Consensus Algorithm
 
@@ -89,13 +93,13 @@ We anticipate validators to be invite only. To start the chain, we will assign 2
 
 # 3. Market Data Consensus Model
 
-### 3.1 Market Data Consensus Diagram
+#### Market Data Consensus Diagram
 
 <p align="center">
 <img src="https://i.imgur.com/5SjgY1H.png">
 </p>
 
-### 3.2 Validator Weighting
+#### Validator Weighting
 
 We anticpate a reputation algorithm to reward validators which are truthful and provide consistently accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
 
@@ -110,13 +114,13 @@ Rublix will attempt to provide reputable data on-chain by:
 <img src="https://i.imgur.com/QDh4w7q.png">
 </p>
 
-### 3.3 Remaining Trustless
+#### Remaining Trustless
 
 In case of a faulty validator on the network delivering data, we want to be more accurate than taking a simplified average.
 
 We introduce a validator/node layer with real-time market data integration using multiple data sources to reach price action consensus. The values are based off validator reputation and averages from multiple real-time Websockets.
 
-### 3.4 Ethereum Prototype Contracts
+#### Ethereum Prototype Contracts
 
 We have created smart contracts using Oraclize which demonstrate the functionality of bringing external market data from a single API onto the chain for smart contract resolution. Unfortunately the real-time aspect is not possible due to excessive fees from high frequency API queries. Using Oracles on the Ethereum chain we run into four major problems:
 
@@ -320,7 +324,7 @@ contract RublixBluePrintPriceUpdateContract is usingOraclize {
 //on daily basis mon-friday we want to update the ticker price in the contrct
 ````
 
-### 3.5 Use Cases
+#### Use Cases
 
 #### Inexpensive Network
 
