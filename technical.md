@@ -47,11 +47,11 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 
 # Blockchain Mission
 
-In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
+The Rublix Blockchain will source financial data from multiple data feeds and post validated information on-chain. In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
 
 #### Purpose & Functionality
 
-The Rublix Blockchain is being built to make use of trusted and immutable financial data posted on-chain. Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
+The Rublix Blockchain is being built to make use of trusted and immutable financial data posted on-chain. Due to the complex nature of the blockchain and to encourage widespread adoption, users must be welcomed with an interface that is easy to navigate, understand and use. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
 
 #### Quality of Information
 
@@ -63,7 +63,7 @@ Disruptive centralized projects like Facebook, Uber and Youtube all handle milli
 
 # Decentralized Applications
 
-The Rublix Blockchain is being built for decentralized applications that need trusted financial data hosted on-chain. We are building, testing and launching our initial DApps on other chains before migrating onto the Rublix Blockchain.
+Once the Rublix Blockchain is established, decentralized applications that require trusted financial data hosted on-chain can be built on our platform. We are building, testing and launching our initial DApps on other chains before migrating onto the Rublix Blockchain.
 
 ### Hedge Platform
 
