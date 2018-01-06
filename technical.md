@@ -4,13 +4,13 @@
 
 ### Abstract
 
-Current architectures all suffer from a number of issues: extensibility, scalability and lack of on-chain data availability. Up until now, the primitive nature of the blockchain has posed restrictions on the development of exciting DApps. We believe these problems stem from the relationship between two very important parts of the consensus architecture, namely canonicality and validity, too closely together.
+Many blockchain architectures suffer from a number of issues: extensibility, scalability and on-chain data availability. Until now, the primitive nature of blockchain technology has posed restrictions on the development of exciting DApps. We believe these problems stem from the relationship between two very important parts of the consensus architecture - canonicality and validity - being too closely associated.
 
-Lack of on-chain resources have put a strain on complex blockchain innovation and use cases. The use of Oracles remove the true purpose of blockchain's core functionality by adding a centralized party to handle off-chain data.
+Lack of on-chain resources have put a strain on complex blockchain innovation and use cases. The use of Oracles remove the true purpose of blockchains' core functionality by adding a centralized party to handle off-chain data.
 
-This Rublix whitepaper introduces an architecture which fundamentally sets itself apart from the rest of the existing blockchains by integrating a strategic consensus method for reliable market data accessible on-chain.
+This Rublix whitepaper introduces an architecture that integrates a strategic consensus method for reliable market data accessible on-chain.
 
-Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed easily through its chain while retaining maximum validity through the utilization of several data sources, and using a consensus agreement to determine the final accurate value. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency or forex market.
+Rublix is proposing a trustless and decentralized blockchain which enables real-time market data to be accessed through its chain while retaining maximum validity by utilizing several data sources and a unique consensus agreement to determine accurate values. This gives traders, fund managers and investors the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency, forex market, et al.
 
 ### Table of Contents
 
@@ -49,15 +49,15 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 
 # 1. Developing an Efficient and High Quality Blockchain
 
-In order to gain worldwide use, our blockchain will need to be flexible enough to meet the following criteria:
+In order to gain worldwide use, our blockchain will need the flexibility to meet the following criteria:
 
-#### Incredible UX
+#### Attractive UX
 
-Due to the complex nature of the Blockchain, in order to attract the masses to the platform, users must be welcomed with an interface which is easy to navigate, understand and get used to.
+Due to the complex nature of the blockchain and in order to attract mass adoprtion to the platform, users must be welcomed with an interface which is easy to navigate, understand and use.
 
 #### Scalability
 
-Disruptive projects like Facebook, Uber and Youtube all handle thousands if not millions of active connections on the daily. Current mainstream blockchain projects are unable to handle such loads and therefore a platform that can handle a large amount of active users simultaneously is essential to future success.
+Disruptive projects like Facebook, Uber and Youtube all handle thousands of active connections simultaneously. Current mainstream blockchain projects are unable to handle such loads, thus a platform that can handle a large number of concurrent users is essential to future proliferation.
 
 #### Quick Upgrades and Bug Recovery
 
@@ -359,7 +359,7 @@ Governance is the process by which people reach consensus on subjective matters 
 
 A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications and propose hard forking changes to the underlying protocol.
 
-Embedded into the Rublix software is the election of block producers. Before any change can be made to the Blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
+Embedded into the Rublix software is the election of block producers. Before any change can be made to the blockchain these block producers must approve it. If the block producers refuse to make changes desired by the token holders then they can be voted out. If the block producers make changes without permission of the token holders then all other non-producing full-node validators (exchanges, etc) will reject the change.
 
 # 6. Decentralized Applications
 
@@ -413,7 +413,7 @@ John accesses the Hedge application, undertakes technical analysis on the BTCUSD
 
 The remaining data will be automatically populated based on the fundamentals of the Blueprint:
 
-* Potential Gain - The percentage of gain between the entry and exit points.
+* Potential gain.
 * Blueprint purchase price.
 * Ranking impact.
 
@@ -471,7 +471,3 @@ This Rublix whitepaper is for information purposes only and is subject to change
 Rublix and its affiliates shall carry no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will Rublix or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this whitepaper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
 Copyright (c) 2018 Rublix Without permission, anyone may use, reproduce or distribute any material in this whitepaper for non-commercial and educational use (i.e., other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited and proper credit is given.
-
-# 10. Special Thanks
-
-Special thanks to the welcoming Ethereum community. Thank you for all the support and feedback: Jason Matthison, Ameer Rosic.
