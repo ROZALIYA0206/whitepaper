@@ -4,11 +4,11 @@
 
 ### Abstract
 
-Many blockchain architectures suffer from a number of issues: extensibility, scalability and on-chain data availability. Until now, the primitive nature of blockchain technology and the lack of on-chain resources have hindered complex blockchain innovation and use cases and has posed restrictions on the development of exciting and elaborate DApps. We believe these problems stem from the relationship between two very important parts of the consensus architecture - canonicality and validity - being too closely associated. Furthermore, the use of Oracles remove the true purpose of blockchains' core functionality by adding a centralized party to handle off-chain data.
+Until now, the primitive nature of blockchain technology and the lack of on-chain resources have hindered complex blockchain innovation and has posed restrictions on the development of exciting and elaborate DApps. Many blockchain architectures suffer from a number of issues: extensibility, scalability and on-chain data availability. We believe these problems stem from the relationship between two very important parts of the consensus architecture - canonicality and validity - being too closely associated. Furthermore, the use of Oracles adds a centralized party to manage off-chain data which defeats the true purpose of blockchains' core functionality.
 
 This Rublix whitepaper introduces an architecture that integrates a strategic consensus method for reliable market data accessible on-chain.
 
-Rublix is proposing a trustless and decentralized blockchain which enables real-time market pricing data to be accessed through its chain while retaining maximum validity by utilizing several data sources and a unique consensus agreement to determine accurate values. This gives traders, fund managers, investors and users of any kind the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency, forex market, et al.
+Rublix is proposing a trustless and decentralized blockchain that enables real-time market pricing data to be accessed on-chain while maintaining integrity by utilizing several data sources and a unique consensus agreement to determine accurate values. This gives traders, fund managers, investors and users of any kind the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency, forex market, et al.
 
 ### Table of Contents
 
@@ -20,11 +20,12 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
    * [Performance](#performance)
 2. [Hybrid Consensus Algorithm](#2-hybrid-consensus-algorithm)
    * [Proof-of-Authority / Stake](#proof-of-authority--proof-of-stake-model)
-3. [Market Data Concensus Model](#3-market-data-consensus-model)
+3. [Market Data Consensus Model](#3-market-data-consensus-model)
+   * [Market Data Consensus Diagram](#31-market-data-consensus-diagram)
    * [Validator Weighting](#32-validator-weighting)
    * [Remaining Trustless](#33-remaining-trustless)
    * [Ethereum Prototype Contracts](#34-ethereum-prototype-contracts)
-   * [Use Cases](#35use-cases)
+   * [Use Cases](#35-use-cases)
 4. [Milestone Releases](#4-milestone-releases)
    * [Rise](#rise)
    * [Genesis](#genesis)
@@ -45,29 +46,29 @@ Rublix is proposing a trustless and decentralized blockchain which enables real-
 8. [Upgrading and Maintaining the Protocol](#8-upgrading-and-maintaining-the-protocol)
 9. [Disclaimer](#9-disclaimer)
 
-# 1. Developing an Efficient and High Quality Blockchain
+# 1. Blockchain Mission - Developing an Efficient and High Quality Blockchain
 
-In order to gain worldwide use, the Rublix Blockchain will need the flexibility to meet the following criteria:
+In order to gain worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
 
 #### Attractive UX
 
-Due to the complex nature of the blockchain and in order to attract mass adoption to the platform, users must be welcomed with an interface which is easy to navigate, understand and use.
+Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption.
 
 #### Scalability
 
-Disruptive projects like Facebook, Uber and Youtube all handle thousands of active connections simultaneously. Current mainstream blockchain projects are unable to handle such loads, thus a platform that can handle a large number of concurrent users is essential to its successful proliferation.
+Disruptive centralized projects like Facebook, Uber and Youtube all handle millions of active connections simultaneously. In order to achieve similar worldwide scalability, decentralized applications built on the Rublix Blockchain will utilize a unique consensus model (structured as a hybrid between Proof-of-Authority and Proof-of-Stake) that can support massive user load.
 
 #### Quick Upgrades and Bug Recovery
 
-Businesses building blockchain-based applications need the flexibility to enhance their applications with new features. And all blockchain projects are subject to bugs, even with the most rigorous amount of testing. The platform architecture must be structured appropriately in order to fix bugs quickly when they inevitably occur.
+Businesses building blockchain-based applications need the flexibility to enhance their applications with new features. Additionally, all blockchain projects are subject to bugs even with the most rigorous amount of testing. The Rublix architecture will be structured appropriately in order to upgrade functionality and fix bugs quickly and efficiently.
 
 #### Low Latency
 
-A good UX demands reliable feedback with a time delay of less than a few seconds. Longer delays frustrate users and make applications built on a blockchain less competitive with existing centralized alternatives.
+A good UX demands reliable feedback with a time delay of less than a few seconds. Longer delays frustrate users and render on-chain applications less competitive than existing centralized alternatives.
 
 #### Coordinated Performance
 
-Large scale applications need to divide the workload across multiple CPUs and computers. Validators will require an expansion method which does not sacrifice security.
+Large scale applications need to divide the workload across multiple CPUs and computers. Rublix validators will require an expansion method which does not sacrifice security.
 
 # 2. Hybrid Consensus Algorithm
 
@@ -87,6 +88,8 @@ Benefits of the Rublix Consensus Model:
 We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
 
 # 3. Market Data Consensus Model
+
+### 3.1 Market Data Consensus Diagram
 
 <p align="center">
 <img src="https://i.imgur.com/5SjgY1H.png">
@@ -325,7 +328,7 @@ The hybrid consensus model provides an inexpensive way to secure the network. Us
 
 #### No Miners
 
-Due to consensus lying in the validators (Nodes) with no mining required, scalibility concerns subside as transactions are not reliant on resource intensive confirmations.
+Due to consensus lying in the validators (nodes) with no mining required, scalibility concerns subside as transactions are not reliant on resource intensive confirmations.
 
 # 4. Milestone Releases
 
