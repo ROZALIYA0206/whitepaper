@@ -12,47 +12,47 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 
 ### Table of Contents
 
-1. [Blockchain Mission](#1-developing-an-efficient-and-high-quality-blockchain)
-   * [Attractive UX & Usability](#incredible-ux)
-   * [Scalability](#scalability)
-   * [Bug Recovery & Quick Upgrades](#quick-upgrades-and-bug-recovery)
-   * [Functionality & Purpose](#functionality)
-   * [Coordinated Performance](#performance)
-2. [Hybrid Consensus Algorithm](#2-hybrid-consensus-algorithm)
-   * [Proof-of-Authority / Proof-of-Stake Model](#proof-of-authority--proof-of-stake-model)
-3. [Market Data Consensus Model](#3-market-data-consensus-model)
-   * [Market Data Consensus Diagram](#31-market-data-consensus-diagram)
-   * [Validator Weighting](#32-validator-weighting)
-   * [Remaining Trustless](#33-remaining-trustless)
-   * [Ethereum Prototype Contracts](#34-ethereum-prototype-contracts)
-   * [Use Cases](#35-use-cases)
-4. [Milestone Releases](#4-milestone-releases)
-   * [Rise](#rise)
-   * [Genesis](#genesis)
-     * [Token Swap](#token-swap)
-   * [Epilogue](#epilogue)
-5. [Governance Model](#5-governance-model)
-6. [Decentralized Applications](#6-decentralized-applications)
-   * [Hedge Platform](#hedge-platform)
-     * [Version 1](#hedge-v1-smart-contract-integration-s)
-     * [Version 2](#hedge-v2-proprietary-blockchain)
-     * [Blueprint Smart Contracts](#blueprint-smart-contracts)
-     * [Proof-of-Ranking Algorithm](#)
-       * [Overview](#overview)
-       * [Implementation](#implementation)
-7. [RBLX Token](#7-rblx-token)
-     * [Purpose](#purpose)
-     * [Reward Mechanism](#reward-mechanism)
-8. [Upgrading and Maintaining the Protocol](#8-upgrading-and-maintaining-the-protocol)
-9. [Disclaimer](#9-disclaimer)
+* [Blockchain Mission](#blockchain-mission)
+  * [Attractive UX & Usability](#Attractive-UX-&-Usability)
+  * [Scalability](#scalability)
+  * [Bug Recovery & Quick Upgrades](#Bug-Recovery-&-Quick-Upgrades)
+  * [Functionality & Purpose](#Functionality-&-Purpose)
+  * [Coordinated Performance](#Coordinated-performance)
+* [Hybrid Consensus Algorithm](#hybrid-consensus-algorithm)
+  * [Proof-of-Authority / Proof-of-Stake Model](#Proof-of-Authority-/-Proof-of-Stake-Model)
+* [Decentralized Applications](#decentralized-applications)
+  * [Hedge Platform](#hedge-platform)
+    * [Hedge Version 1](#hedge-v1-smart-contract-integration)
+    * [Hedge Version 2](#hedge-v2-proprietary-blockchain)
+    * [Blueprint Smart Contracts](#blueprint-smart-contracts)
+    * [Proof-of-Ranking Algorithm](#Proof-of-Ranking-Algorithm)
+      * [Overview](#overview)
+      * [Implementation](#implementation)
+* [Market Data Consensus Model](#3-market-data-consensus-model)
+  * [Market Data Consensus Diagram](#31-market-data-consensus-diagram)
+  * [Validator Weighting](#32-validator-weighting)
+  * [Remaining Trustless](#33-remaining-trustless)
+  * [Ethereum Prototype Contracts](#34-ethereum-prototype-contracts)
+  * [Use Cases](#35-use-cases)
+* [Governance Model](#governance-model)
+* [Milestone Releases](#milestone-releases)
+  * [Rise](#rise)
+  * [Genesis](#genesis)
+    * [Token Swap](#token-swap)
+  * [Epilogue](#epilogue)
+* [RBLX Token](#rblx-token)
+  * [Purpose](#purpose)
+  * [Reward Mechanism](#reward-mechanism)
+* [Upgrading and Maintaining the Protocol](#upgrading-and-maintaining-the-protocol)
+* [Disclaimer](#disclaimer)
 
-# 1. Blockchain Mission
+# Blockchain Mission
 
 In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
 
 #### Attractive UX & Usability
 
-Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption. The Rublix blockchain will be built in the widely used Python language.
+Due to the complex nature of the blockchain, users must be welcomed with an interface that is easy to navigate, understand and use in order to achieve mass adoption. The Rublix blockchain will be built on Python with a focus on ease of future DApp development.
 
 #### Scalability
 
@@ -64,7 +64,7 @@ There exists a need for trusted financial information. The Rublix Blockchain is 
 
 #### Quality of Information
 
-In order to ensure the highest quality of information, the appropriate incentives and consensus mechanisms must be established. Rublix  is implementing a novel verification process combined with the most well-developed architectures on the market to ensure utmost integrity for data validation and access.
+In order to ensure the highest quality of information, the appropriate incentives and consensus mechanisms must be established. Rublix  is implementing a novel verification process combined with the most advanced architectures on the market to ensure utmost integrity for data validation and access.
 
 ####  Bug Recovery and Quick Upgrades
 
@@ -74,7 +74,7 @@ All blockchain projects are subject to bugs even with the most rigorous amount o
 
 High-load applications need to spread the workload across multiple CPUs and computers. Rublix validators will use an expansion method that does not sacrifice performance or security.
 
-# 2. Hybrid Consensus Algorithm
+# Hybrid Consensus Algorithm
 
 #### Proof-of-Authority / Proof-of-Stake Model
 
@@ -91,7 +91,82 @@ Benefits of the Rublix Consensus Model:
 
 We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
 
-# 3. Market Data Consensus Model
+# Decentralized Applications
+
+Rublix will migrate its development of decentrailzed applications onto the Rublix Blockchain.
+
+### Hedge Platform
+
+Our flagship DApp, Hedge, is in development and is currently being built on the Ethereum network but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking real-time trading predictions for cryptocurrencies, stocks, options, commodities or any other tradable product.
+ 
+The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "Blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the Blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader's track record and ranking.
+ 
+Users who identify a trader with a high ranking and reputation can purchase their Blueprints using RBLX Tokens to gain access to that trader's predictions. If the trader makes a correct prediction via the Blueprint, they will receive the tokens from the purchasers. Otherwise, the tokens are returned to the purchaser as coded in the smart contract. The higher the trader's ranking on Hedge, the more expensive the Blueprint. This ranking, reward and verification system greatly enhances a trader's credibility, motivation to succeed and earning potential, in addition to filtering out poor performers with unproven track records.
+
+#### Hedge v1: Smart Contract Integration (Blueprints)
+
+The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture on the Rublix Blockchain, which will handle all of our anticipated features. Meanwhile, the Rublix Blockchain will continue to be researched and built and continue its  development giving Hedge and other Rublix projects ample room for growth.
+
+By incorporating smart contract capabilities, Hedge v1 allows for the facilitation of outcomes for analyst Blueprints. This system will be able to compare market predictions coded into each smart contract using Oracles, and then execute positive or negative rankings for the trader based on the end result of what took place in the market at a future point in time. Traders who correctly anticipate market movements will automatically be rewarded with positive ranking points on the Hedge platform based on the smart contract authority.
+
+In our context, an Oracle is an agent that finds, validates and submits market information to the blockchain to be used by our smart contracts. When a particular value (i.e., date/time, price, etc.) is reached an event automatically triggers. The primary task of an Oracle is to provide these values to the smart contract in a secure and accurate manner.
+
+This heightened level of validation will greatly enhance traders' credibility and potential to attract subscribers to their private channel, while at the same time filtering out poor performers with unproven track records.
+
+#### Hedge v2: Proprietary Blockchain
+
+Hedge v2, which is planned for a late-2018 release, will run off Rublix's core blockchain. By upgrading to this unique, industry specific technology and framework, the Rublix platform will incorporate the following upgraded features:
+
+* Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex features.
+
+* Real-time market data will allow Blueprints to be solved on-chain automatically withouth the need for an Oracle.
+
+* A reduction in dependency on the Ethereum network and its inherent limitations.
+
+* Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
+
+#### Blueprint Smart Contract Details
+
+Each smart contract is written based on parameters set by the trader using the Hedge web application. Any audience member can then 'buy' this analysis, which is called a 'Blueprint.' Depending on the outcome of the Blueprint (a correct or incorrect trade), the contract will then execute an outcome when specific parameters are carried out. The executed contract will affect the trader's reputation, ranking and RBLX earnings; RBLX is only awarded from the audience to the trader upon making a correct Blueprint, otherwise the RBLX tokens are returned to the audience. This means that audience members will only 'pay' for trader recommendations with RBLX if their Blueprint is 'true,' otherwise the smart contract will execute a 'false' outcome and return the RBLX to the audience member. 
+ 
+The purpose of the smart contract integration into the Blueprints is to create a higher level of validation, verification and transparency of analyst performance, which in turn affects their ranking and reward. Plenty of traders and analysts who make market predictions on social media, during interviews or to clients directly have uncertain ramifications for being incorrect and may even delete or refute previous predictions. The Hedge platform intends to filter out poor performers and allows traders' true wisdom to speak for itself by utilizing verified smart contracts posted on the blockchain.
+
+
+#### *Step by Step creation of a Blueprint contract:*
+
+John accesses the Hedge application, undertakes technical analysis on the BTCUSD chart and decides to post the dynamics of a trade he is going to make. He clicks “Create Blueprint” then enters the following data:
+
+* Expiration of the Contract - When does the trade end?
+* Category - What kind of product is it (cryptocurrency, token, equity, ETF, option, etc.)?
+* Entry and Exit points - At what price does this trade start and finish?
+* Address - Where will the RBLX tokens be distributed if this trade is successful?
+
+The remaining data will be automatically populated based on the fundamentals of the Blueprint:
+
+* Potential gain from the trade as a percentage.
+* Blueprint purchase price based on John's ranking on the Hedge platform.
+* Ranking impact for a correct or incorrect Blueprint.
+
+
+#### Proof-of-Ranking Algorithm
+
+##### Overview
+
+The Proof of Ranking algorithm is a propritary multi variable set of forumlas which assigns each trader on the platform an overall rank. 
+
+##### Implementation
+
+The premis of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
+
+Let R(u,t) be the Proof-Of-Rank function describing a user u at a time t. R(u,t) is a real-valued function where `u=(u\_1,u\_2,...,u\_N)` is an N-dimensional vector of real values.
+
+````
+R(u,t) = f(u,t, w(t))
+````
+
+Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
+
+# Market Data Consensus Model
 
 #### Market Data Consensus Diagram
 
@@ -137,7 +212,7 @@ We have created smart contracts using Oraclize which demonstrate the functionali
 <img src="https://i.imgur.com/faaqoFf.png">
 </p>
 
-#### Conclusion
+#### Determination
 
 By integrating the data supply system into the validation level at genesis we are able to overcome these limitations on the Rublix Blockchain.
 
@@ -334,7 +409,15 @@ The hybrid consensus model provides an inexpensive way to secure the network. Us
 
 Due to consensus lying in the validators (nodes) with no mining required, scalibility concerns subside as transactions are not reliant on resource intensive confirmations.
 
-# 4. Milestone Releases
+# Governance Model
+
+Governance is the process in which actors reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators must be chosen by the power of a select few in order to secure the network. The Rublix Blockchain implements a governance process that efficiently combines a hybrid Proof-of-Authority and Proof-of-Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same number of tokens as the existing validator who elected them. The agents' stake can be gifted or purchased on an exchange. This procedure ensures the newcomer is committed to becoming a trusted validator on the Rublix network.
+
+A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications and propose changes requiring a hard fork to the underlying protocol.
+
+Embedded into the Rublix software is the election of block producers. Before any changes can be made to the blockchain, block producers must approve the proposed alterations. If block producers refuse to undertake the suggested changes made by the token holders, the proposals can be voted out. If block producers make changes without permission of the token holders then all other non-producing full-node validators (for example, exchanges) will reject the change.
+
+# Milestone Releases
 
 Due to the nature and complexity of blockchain technology, the Rublix project will be spread into multiple stages.
 
@@ -356,88 +439,6 @@ A token swap will occur after the Rublix network is deployed, tested and deemed 
 
 The Hedge platform will be completely migrated onto the Rublix Blockchain. Subsequent DApps may be built and deployed on the newly established chain.
 
-# 5. Governance Model
-
-Governance is the process in which actors reach consensus on subjective matters that cannot be controlled entirely by software algorithms. In the Rublix instance, initial validators must be chosen by the power of a select few in order to secure the network. The Rublix Blockchain implements a governance process that efficiently combines a hybrid Proof-of-Authority and Proof-of-Stake protocol. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same number of tokens as the existing validator who elected them. The agents' stake can be gifted or purchased on an exchange. This procedure ensures the newcomer is committed to becoming a trusted validator on the Rublix network.
-
-A blockchain based on the Rublix software recognizes that power originates within the token holders and initial validators. The block validators and producers are given limited and checked authority to freeze accounts, update defective applications and propose changes requiring a hard fork to the underlying protocol.
-
-Embedded into the Rublix software is the election of block producers. Before any changes can be made to the blockchain, block producers must approve the proposed alterations. If block producers refuse to undertake the suggested changes made by the token holders, the proposals can be voted out. If block producers make changes without permission of the token holders then all other non-producing full-node validators (for example, exchanges) will reject the change.
-
-# 6. Decentralized Applications
-
-Rublix will migrate its development of decentrailzed applications onto the Rublix Blockchain.
-
-### Hedge Platform
-
-Our flagship DApp, Hedge, is in development and is currently being built on the Ethereum network but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking real-time trading predictions for cryptocurrencies, stocks, options, commodities or any other tradable product.
- 
-The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "Blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the Blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader's track record and ranking.
- 
-Users who identify a trader with a high ranking and reputation can purchase their Blueprints using RBLX Tokens to gain access to that trader's predictions. If the trader makes a correct prediction via the Blueprint, they will receive the tokens from the purchasers. Otherwise, the tokens are returned to the purchaser as coded in the smart contract. The higher the trader's ranking on Hedge, the more expensive the Blueprint. This ranking, reward and verification system greatly enhances a trader's credibility, motivation to succeed and earning potential, in addition to filtering out poor performers with unproven track records.
-
-#### Hedge v1: Smart Contract Integration (Blueprints)
-
-The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture on the Rublix Blockchain, which will handle all of our anticipated features. Meanwhile, the Rublix Blockchain will continue to be researched and built and continue its  development giving Hedge and other Rublix projects ample room for growth.
-
-By incorporating smart contract capabilities, Hedge v1 allows for the facilitation of outcomes for analyst Blueprints. This system will be able to compare market predictions coded into each smart contract using Oracles, and then execute positive or negative rankings for the trader based on the end result of what took place in the market at a future point in time. Traders who correctly anticipate market movements will automatically be rewarded with positive ranking points on the Hedge platform based on the smart contract authority.
-
-In our context, an Oracle is an agent that finds, validates and submits market information to the blockchain to be used by our smart contracts. When a particular value (i.e., date/time, price, etc.) is reached an event automatically triggers. The primary task of an Oracle is to provide these values to the smart contract in a secure and accurate manner.
-
-This heightened level of validation will greatly enhance traders' credibility and potential to attract subscribers to their private channel, while at the same time filtering out poor performers with unproven track records.
-
-#### Hedge v2: Proprietary Blockchain
-
-Hedge v2, which is planned for a late-2018 release, will run off Rublix's core blockchain. By upgrading to this unique, industry specific technology and framework, the Rublix platform will incorporate the following upgraded features:
-
-* Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex features.
-
-* Real-time market data will allow Blueprints to be solved on-chain automatically withouth the need for an Oracle.
-
-* A reduction in dependency on the Ethereum network and its inherent limitations.
-
-* Ability to work with community members who want to build on top of our finance platform using our Developer Toolkit.
-
-#### Blueprint Smart Contract Details
-
-Each smart contract is written based on parameters set by the trader using the Hedge web application. Any audience member can then 'buy' this analysis, which is called a 'Blueprint.' Depending on the outcome of the Blueprint (a correct or incorrect trade), the contract will then execute an outcome when specific parameters are carried out. The executed contract will affect the trader's reputation, ranking and RBLX earnings; RBLX is only awarded from the audience to the trader upon making a correct Blueprint, otherwise the RBLX tokens are returned to the audience. This means that audience members will only 'pay' for trader recommendations with RBLX if their Blueprint is 'true,' otherwise the smart contract will execute a 'false' outcome and return the RBLX to the audience member. 
- 
-The purpose of the smart contract integration into the Blueprints is to create a higher level of validation, verification and transparency of analyst performance, which in turn affects their ranking and reward. Plenty of traders and analysts who make market predictions on social media, during interviews or to clients directly have uncertain ramifications for being incorrect and may even delete or refute previous predictions. The Hedge platform intends to filter out poor performers and allows traders' true wisdom to speak for itself by utilizing verified smart contracts posted on the blockchain.
-
-
-#### *Step by Step creation of a Blueprint contract:*
-
-John accesses the Hedge application, undertakes technical analysis on the BTCUSD chart and decides to post the dynamics of a trade he is going to make. He clicks “Create Blueprint” then enters the following data:
-
-* Expiration of the Contract - When does the trade end?
-* Category - What kind of product is it (cryptocurrency, token, equity, ETF, option, etc.)?
-* Entry and Exit points - At what price does this trade start and finish?
-* Address - Where will the RBLX tokens be distributed if this trade is successful?
-
-The remaining data will be automatically populated based on the fundamentals of the Blueprint:
-
-* Potential gain from the trade as a percentage.
-* Blueprint purchase price based on John's ranking on the Hedge platform.
-* Ranking impact for a correct or incorrect Blueprint.
-
-
-#### Proof-of-Ranking Algorithm
-
-##### Overview
-
-The Proof of Ranking algorithm is a propritary multi variable set of forumlas which assigns each trader on the platform an overall rank. 
-
-##### Implementation
-
-The premis of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
-
-Let R(u,t) be the Proof-Of-Rank function describing a user u at a time t. R(u,t) is a real-valued function where `u=(u\_1,u\_2,...,u\_N)` is an N-dimensional vector of real values.
-
-````
-R(u,t) = f(u,t, w(t))
-````
-
-Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
 
 # 7. RBLX Token
 
