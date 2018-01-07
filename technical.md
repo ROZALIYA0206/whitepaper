@@ -410,18 +410,19 @@ As tested on the Kovan network and Parity recommendation.
 
 > Simple and fast consensus algorithm, each validator gets an assigned time slot in which they can release a block. The time slots are determined by the system clock of each validator.[[1](https://paritytech.github.io/wiki/Aura)]
 
-<b>Benefits of a fast blocktime:</b>
+<b>Issues with a fast block time in traditional protocols:</b>
 
 Traditional PoW protocols operate poorly when blocktimes are set too low. These issues include:
 
 * Orphan Blocks and wasted disk space
 * Requires increased bandwidth
 * More/longer forks, and even longer re-org time
-* A greater portion of the hashpower is wasted. resulting in lower effective security.
+* A greater portion of the hashing power is gone to waste
 
+<b>Benefits of faster block times in the Rublix Blockchain:</b>
 
 * Ability to handle a higher volume of transactions thanks to its blazing fast block generation.
-* The faster block time reduces the risk of double spending attacks.
+* Reduction of risk when it comes to double spending attacks.
 
 We anticipate new validators to be invite only by existing block creators.
 
