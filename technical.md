@@ -45,15 +45,15 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 
 # Blockchain Mission
 
-The Rublix Blockchain will source financial data from multiple data feeds and post validated information on-chain. In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to meet the following criteria:
+In order to develop an efficient and high quality blockchain for worldwide use, the Rublix Blockchain will need the ability and flexibility to address the following criteria:
 
 #### Purpose & Functionality
 
-The Rublix Blockchain is being built to make use of trusted and immutable financial data posted on-chain. Due to the complex nature of the blockchain and to encourage widespread adoption, users must be welcomed with an interface that is easy to navigate, understand and use. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
+The Rublix Blockchain will source financial data from multiple data feeds and post the authenticated information on-chain. This can be used to build decentralized applications that require trusted market data. Due to the complex nature of the blockchain and to encourage widespread adoption, Rublix users must be welcomed with an interface that is easy to navigate, understand and use. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
 
 #### Quality of Information
 
-In order to ensure the highest quality of information, the appropriate incentives and consensus mechanisms must be established. Rublix is implementing a novel verification process combined with the most advanced architectures on the market to ensure utmost integrity for data validation and access.
+In order to ensure the highest quality of information, the appropriate incentive models and consensus mechanisms must be established. Rublix is implementing a novel verification process combined with the most advanced architectures on the market to ensure utmost integrity for data validation and access.
 
 #### Scalability
 
@@ -61,11 +61,11 @@ Disruptive centralized projects like Facebook, Uber and Youtube all handle milli
 
 # Decentralized Applications
 
-Once the Rublix Blockchain is established, decentralized applications that require trusted financial data hosted on-chain can be built on our platform. We are building, testing and launching our initial DApps on other chains before migrating onto the Rublix Blockchain.
+Once the Rublix Blockchain is established, decentralized applications can be built on the platform that require trusted, on-chain financial data. We are building, testing and launching our initial finance related DApps on other chains before migrating onto the Rublix Blockchain.
 
 ### Hedge Platform
 
-Our flagship DApp, Hedge, is in development and is currently being built on the Ethereum network but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking real-time trading predictions for cryptocurrencies, stocks, options, commodities or any other tradable product.
+Our flagship DApp, Hedge, is in development and is currently being built on the Ethereum network but will eventually be migrated to the Rublix Blockchain. Hedge is a networking hub for financial and cryptocurrency trading experts and newcomers seeking trading predictions for cryptocurrencies, stocks, options, commodities or any other tradable product.
  
 The Hedge platform incorporates blockchain technology directly into the functionality whereby traders submit predictions into a smart contract-driven "Blueprint" that will execute true or false results based on real market information. Hedge rewards traders with RBLX Tokens for successful predictions as paid for by the Blueprint purchasers. Traders with successful predictions will also be rewarded positive ranking points on the Hedge platform based on the smart contract authority and Hedge's Proof-of-Ranking algorithm. Blueprints will thus carry an intrinsic value based on the trader's track record and ranking.
  
@@ -73,7 +73,7 @@ Users who identify a trader with a high ranking and reputation can purchase thei
 
 #### Hedge v1: Smart Contract Integration (Blueprints)
 
-The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture on the Rublix Blockchain, which will handle all of our anticipated features. Meanwhile, the Rublix Blockchain will continue to be researched and built and continue its  development giving Hedge and other Rublix projects ample room for growth.
+The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture on the Rublix Blockchain, which will handle all of our anticipated features. Meanwhile, the Rublix Blockchain will continue to be researched and developed giving Hedge and other Rublix projects ample room for growth.
 
 By incorporating smart contract capabilities, Hedge v1 allows for the facilitation of outcomes for analyst Blueprints. This system will be able to compare market predictions coded into each smart contract using Oracles, and then execute positive or negative rankings for the trader based on the end result of what took place in the market at a future point in time. Traders who correctly anticipate market movements will automatically be rewarded with positive ranking points on the Hedge platform based on the smart contract authority.
 
@@ -95,7 +95,7 @@ Hedge v2, which is planned for a late-2018 release, will run off Rublix's core b
 
 #### Blueprint Smart Contract Details
 
-Each smart contract is written based on parameters set by the trader using the Hedge web application. Any audience member can then 'buy' this analysis, which is called a 'Blueprint.' Depending on the outcome of the Blueprint (a correct or incorrect trade), the contract will then execute an outcome when specific parameters are carried out. The executed contract will affect the trader's reputation, ranking and RBLX earnings; RBLX is only awarded from the audience to the trader upon making a correct Blueprint, otherwise the RBLX tokens are returned to the audience. This means that audience members will only 'pay' for trader recommendations with RBLX if their Blueprint is 'true,' otherwise the smart contract will execute a 'false' outcome and return the RBLX to the audience member. 
+Each smart contract is written based on parameters set by the trader using the Hedge web application. Any audience member can then 'buy' this analysis, or 'Blueprint.' Depending on the result of the Blueprint (a correct or incorrect trade prediction), the contract will then execute an outcome when specific parameters are carried out. The executed contract will affect the trader's reputation, ranking and RBLX earnings; RBLX is only awarded from the audience to the trader upon making a correct Blueprint, otherwise the RBLX tokens are returned to the audience. This means that audience members will only 'pay' for trader recommendations with RBLX if their Blueprint is 'true,' otherwise the smart contract will execute a 'false' outcome and return the RBLX to the audience member. 
  
 The purpose of the smart contract integration into the Blueprints is to create a higher level of validation, verification and transparency of analyst performance, which in turn affects their ranking and reward. Plenty of traders and analysts who make market predictions on social media, during interviews or to clients directly have uncertain ramifications for being incorrect and may even delete or refute previous predictions. The Hedge platform intends to filter out poor performers and allows traders' true wisdom to speak for itself by utilizing verified smart contracts posted on the blockchain.
 
@@ -122,7 +122,7 @@ The Proof of Ranking algorithm is a propritary multi variable set of forumlas wh
 
 ##### Implementation
 
-The premis of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
+The premise of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
 
 Let R(u,t) be the Proof-Of-Rank function describing a user u at a time t. R(u,t) is a real-valued function where `u=(u\_1,u\_2,...,u\_N)` is an N-dimensional vector of real values.
 
@@ -132,9 +132,9 @@ R(u,t) = f(u,t, w(t))
 
 Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
 
-#### Other Projects in Development
+### Other Projects in Development
 
-Rublix, as well as its partners, are also developing other innovative applications which are currently under internal R&D and remain confidential. These DApps may not be publicly disclosed and/or launched on other blockchains before launching on the Rublix Blockchain. 
+Rublix, as well as its partners, are also developing other innovative applications which are currently under internal R&D. Unlike Hedge, these DApps may not be publicly disclosed and/or launched on other blockchains before launching on the Rublix Blockchain. 
 
 # Market Data Validation Model
 
