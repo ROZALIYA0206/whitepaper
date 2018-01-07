@@ -371,7 +371,7 @@ contract RublixBluePrintPriceUpdateContract is usingOraclize {
 
 ### Use Cases
 
-#### Inexpensive Network
+#### Economical Network
 
 The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network's security will also be lower due to considerably lower market cap. 
 
@@ -385,22 +385,49 @@ Due to consensus lying in the validators (nodes) with no mining required, scalib
 
 The Proof-of-Authority model provides one of the highest levels of security, as an attacker with unwanted connection or hacked authority can not overwhelm the entire network by potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
 
-To start the chain, we will assign 20 internal validators to secure the network. 20 initial validators will be enough to get the chain operating healthy.
+To start the chain, we will assign 16 internal validators to secure the network. 16 initial validators will be enough to get the chain operating healthy.
 
 Benefits of the Rublix Consensus Model:
 
 ```
 1. Lower transaction fees
-2. More energy efficient
-3. More secure than traditional Proof-of-Work protocols
-4. Substantially higher scalability
+2. Micro transaction friendly
+3. More energy efficient
+4. More secure than traditional Proof-of-Work protocols
+5. Substantially higher scalability
 ```
+
+Network Specs:
+
+```
+Initial Validators: 16
+Blocktime: 10 Seconds
+Max Supply: 100 million
+Algorithm: Aura
+```
+
+As tested on the Kovan network and Parity recommendation.
+
+> Simple and fast consensus algorithm, each validator gets an assigned time slot in which they can release a block. The time slots are determined by the system clock of each validator.[[1](https://paritytech.github.io/wiki/Aura)]
+
+<b>Benefits of a fast blocktime:</b>
+
+Traditional PoW protocols operate poorly when blocktimes are set too low. These issues include:
+
+* Orphan Blocks and wasted disk space
+* Requires increased bandwidth
+* More/longer forks, and even longer re-org time
+* A greater portion of the hashpower is wasted. resulting in lower effective security.
+
+
+* Ability to handle a higher volume of transactions thanks to its blazing fast block generation.
+* The faster block time reduces the risk of double spending attacks.
 
 We anticipate new validators to be invite only by existing block creators.
 
-As the network continues to grow and more resources are required to scale, validators will be brought in via invite only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
+As the network continues to grow and more resources are required to scale, validators will be brought in via invite only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. The contract will be part of the blockchain state. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
 
-#### Scaling Only When Required
+### Scaling Only When Required
 
 When the chain requires scaling, we use the 'Validator Nomination' DApp to decided which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
 
@@ -410,7 +437,7 @@ Validators will start to create blocks and generate a fixed reward for securing 
 
 ### Block Rewards
 
-Rublix Blockchain will not use a rewards mechanism.
+There are no plans on utilizing a block reward mechanism like Ethereum and Bitcoin. We believe the scarcity of the RBLX native cryptocurrency will contribute to reduced selling pressure.
 
 ### Upgrading & Maintaining the Protocol
 
