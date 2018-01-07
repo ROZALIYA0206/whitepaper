@@ -385,6 +385,8 @@ Due to consensus lying in the validators (nodes) with no mining required, scalib
 
 The Proof-of-Authority model provides one of the highest levels of security, as an attacker with unwanted connection or hacked authority can not overwhelm the entire network by potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
 
+To start the chain, we will assign 20 internal validators to secure the network. 20 initial validators will be enough to get the chain operating healthy.
+
 Benefits of the Rublix Consensus Model:
 
 ```
@@ -394,7 +396,21 @@ Benefits of the Rublix Consensus Model:
 4. Substantially higher scalability
 ```
 
-We anticipate validators to be invite only. To start the chain, we will assign 20 internal validators to secure the network.
+We anticipate new validators to be invite only by existing block creators.
+
+As the network continues to grow and more resources are required to scale, validators will be brought in via invite only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
+
+#### Scaling Only When Required
+
+When the chain requires scaling, we use the 'Validator Nomination' DApp to decided which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
+
+### Economic Sustainability
+
+Validators will start to create blocks and generate a fixed reward for securing the network. For every block generated, a validator who created it will receive all transaction fees. Every validator has as the same opportunity to create a block.
+
+### Block Rewards
+
+Rublix Blockchain will not use a rewards mechanism.
 
 ### Upgrading & Maintaining the Protocol
 
