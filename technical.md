@@ -410,12 +410,12 @@ As tested on the Kovan network and Parity recommendation.
 
 > Simple and fast consensus algorithm, each validator gets an assigned time slot in which they can release a block. The time slots are determined by the system clock of each validator.[[1](https://paritytech.github.io/wiki/Aura)]
 
-<b>Issues with a fast block time in traditional protocols:</b>
+<b>Issues with a faster block time in traditional protocols:</b>
 
 Traditional PoW protocols operate poorly when blocktimes are set too low. These issues include:
 
 * Orphan Blocks and wasted disk space
-* Requires increased bandwidth
+* Increased bandwidth
 * More/longer forks, and even longer re-org time
 * A greater portion of the hashing power is gone to waste
 
@@ -428,13 +428,17 @@ We anticipate new validators to be invite only by existing block creators.
 
 As the network continues to grow and more resources are required to scale, validators will be brought in via invite only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. The contract will be part of the blockchain state. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
 
-### Scaling Only When Required
+### Scaling Only When Needed
 
 When the chain requires scaling, we use the 'Validator Nomination' DApp to decided which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
 
+<p align="center">
+<img src="https://i.imgur.com/xS5cIPr.png">
+</p>
+
 ### Economic Sustainability
 
-Validators will start to create blocks and generate a fixed reward for securing the network. For every block generated, a validator who created it will receive all transaction fees. Every validator has as the same opportunity to create a block.
+Validators will start to create blocks and generate a fixed reward for securing the network. For every block generated, a validator who created it will receive all transaction fees. Every validator has the same opportunity to create a block.
 
 ### Block Rewards
 
