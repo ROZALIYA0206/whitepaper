@@ -430,7 +430,7 @@ As the network continues to grow and more resources are required to scale, valid
 
 ### Scaling Only When Needed
 
-When the chain requires scaling, we use the 'Validator Nomination' DApp to decided which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
+When the chain requires scaling, we use the 'Validator Nomination' smart contract to decided which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
 
 <p align="center">
 <img src="https://i.imgur.com/xS5cIPr.png">
@@ -474,9 +474,9 @@ We will migrate from Rise to Genesis once our testnet is live and functioning ap
 
 The first release of the Rublix Blockchain will be established with 20 internal validators. The chain debut will feature several simple DApps and extensive public testing will occur.
 
-##### Token Swap
+<u>Token Swap</u>
 
-A token swap will occur after the Rublix network is deployed, tested and deemed to be in a stable state by the Rublix audit committee and 3rd party consultants.
+* A token swap will occur after the Rublix network is deployed, tested and deemed to be in a stable state by the Rublix audit committee and 3rd party consultants.
 
 #### Epilogue
 
@@ -487,12 +487,15 @@ The Hedge platform will be completely migrated onto the Rublix Blockchain. Subse
 
 ### Purpose
 
-The Rublix token (RBLX) will be used for the Hedge v1 platform while on the Ethereum network. It will allow for an easy transition to the token swap which will take place at a later date. 
+The primary purpose for the RBLX token is to be used with the Hedge v1 platform while on the Ethereum network. It will allow for an easy transition to the token swap which will take place at a later date. 
+
+The Rublix token sold during the token sale will be identified as 'RBLX'. Rublix will not create any additional supply of tokens for the rewards pool. The fixed token supply created at genesis will reduce deflationary concerns and ultimately the market will decide the fair value of the token.
 
 ### Reward Mechanism
 
-The RBLX token is used as a reward token within its eco-system.
+The RBLX token is used as a reward token within its eco-system and is required for the Rublix Blockchain to properly operate.
 
+These tokens will be the proprietary utility token for the network, Hedge contribution and reward system on the platform. RBLX will be required for Blueprint buy-ins and will pay out in the same currency. RBLX will also be used for other Rublix applications as they are developed, in various ways relevant to each tool, such as platform fees and use credits.
 
 # Disclaimer 
 
