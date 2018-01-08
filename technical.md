@@ -426,6 +426,10 @@ Traditional PoW protocols operate poorly when blocktimes are set too low. These 
 
 We anticipate new validators to be invite only by existing block creators.
 
+<p align="center">
+<img src="https://i.imgur.com/O36HpQ3.png">
+</p>
+
 As the network continues to grow and more resources are required to scale, validators will be brought in via invite only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. The contract will be part of the blockchain state. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
 
 ### Scaling Only When Needed
@@ -464,24 +468,26 @@ The Rublix Blockchain implements a governance process that combines a hybrid Pro
 
 Due to the nature and complexity of blockchain technology, the Rublix project will be spread into multiple stages.
 
+----
 #### Rise
 
 The Hedge v1 platform operates at a preliminary stage on the Ethereum network using a centralized Oracle to bring market data on-chain for basic validation. Consensus is reached by manually executing the smart contract by a 3rd party in order to collect data from the Oracle. The user is rewarded transaction fees as bounty.
 
+----
 #### Genesis
 
 We will migrate from Rise to Genesis once our testnet is live and functioning appropriately, market data is correctly implemented on-chain and has passed rigorous testing from our senior developers and the Rublix audit committee.
 
-The first release of the Rublix Blockchain will be established with 20 internal validators. The chain debut will feature several simple DApps and extensive public testing will occur.
+The first release of the Rublix Blockchain will be established with 16 internal validators. The chain debut will feature several simple DApps and extensive public testing will occur.
 
-<u>Token Swap</u>
-
-* A token swap will occur after the Rublix network is deployed, tested and deemed to be in a stable state by the Rublix audit committee and 3rd party consultants.
-
+#### Token Swap
+  * A token swap will occur after the Rublix network is deployed, tested and deemed to be in a stable state by the Rublix audit committee and 3rd party consultants.
+----
 #### Epilogue
 
 The Hedge platform will be completely migrated onto the Rublix Blockchain. Subsequent DApps may be built and deployed on the newly established chain.
 
+----
 
 # RBLX Token
 
