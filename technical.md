@@ -36,7 +36,6 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 * [Milestone Releases](#milestone-releases)
   * [Rise](#rise)
   * [Genesis](#genesis)
-  * [Token Swap](#token-swap)
   * [Epilogue](#epilogue)
 * [RBLX Token](#rblx-token)
   * [Purpose](#purpose)
