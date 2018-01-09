@@ -8,7 +8,7 @@ Until now, the primitive nature of blockchain technology and the lack of on-chai
 
 This Rublix whitepaper introduces an architecture that integrates a strategic consensus method for reliable market data accessible on-chain.
 
-Rublix is proposing a trustless and decentralized blockchain that enables real-time market pricing data to be accessed on-chain while maintaining integrity by utilizing several data sources and a unique consensus agreement to determine accurate values. This gives traders, fund managers, investors and users of any kind the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency, forex market, et al.
+Rublix is proposing a trustless and decentralized blockchain that enables real-time market pricing data to be accessed on-chain while maintaining integrity by utilizing several data sources and a unique consensus agreement to determine accurate values. This gives traders, fund managers, investors and users of any kind the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency, foreign exchange market, et al.
 
 ### Table of Contents
 
@@ -19,13 +19,13 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 * [Hybrid Consensus Model](#hybrid-consensus-model)
   * [Proof-of-Authority / Proof-of-Stake Model](#Proof-of-Authority-/-Proof-of-Stake-Model)
   * [Upgrading & Maintaining the Protocol](#upgrading-&-maintaining-the-protocol)
-  * [Governance Model](#governance-model)
+  * [Use Cases](#use-cases)
+* [Governance Model](#governance-model)
 * [Market Data Validation Model](#market-data-validation-model)
   * [Market Data Validation Diagram](#market-data-validation-diagram)
   * [Validator Weighting](#validator-weighting)
   * [Remaining Trustless](#remaining-trustless)
   * [Prototype Smart Contracts](#prototype-smart-contracts)
-  * [Use Cases](#use-cases)
 * [Decentralized Applications](#decentralized-applications)
   * [Hedge Platform](#hedge-platform)
     * [Hedge Version 1](#hedge-v1-smart-contract-integration)
@@ -49,7 +49,7 @@ In order to develop an efficient and high quality blockchain for worldwide use, 
 
 #### Purpose & Functionality
 
-The Rublix Blockchain will source financial data from multiple data feeds and post the authenticated information on-chain. This can be used to build decentralized applications that require trusted market data. Due to the complex nature of the blockchain and to encourage widespread adoption, Rublix users must be welcomed with an interface that is easy to navigate, understand and use. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
+The Rublix Blockchain will source financial data from multiple data feeds and post the authenticated information on-chain. This can be used to build decentralized applications that require trusted market data. Moreover, due to the complex nature of the blockchain and to encourage widespread adoption, Rublix users must be welcomed with an interface that is easy to navigate, understand and use. The Rublix blockchain will be built on Python with a focus on ease of DApp development.
 
 #### Quality of Information
 
@@ -65,7 +65,7 @@ Disruptive centralized projects like Facebook, Uber and Youtube all handle milli
 
 The Proof-of-Authority model provides one of the highest levels of security, as an attacker with unwanted connection or hacked authority can not overwhelm the entire network by potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
 
-To start the chain, we will assign 16 internal validators to secure the network. 16 initial validators will be enough to get the chain operating healthy.
+To start the chain, we will assign 16 internal validators to secure the network. This number of initial validators will be sufficient to operate the chain diligently. 
 
 Benefits of the Rublix Consensus Model:
 
@@ -86,31 +86,31 @@ Max Supply: 100 million
 Algorithm: Aura
 ```
 
-As tested on the Kovan network and Parity recommendation.
+As tested on the Kovan network and Parity recommendation:
 
 > Simple and fast consensus algorithm, each validator gets an assigned time slot in which they can release a block. The time slots are determined by the system clock of each validator.[[1](https://paritytech.github.io/wiki/Aura)]
 
 <b>Issues with a faster block time in traditional protocols:</b>
 
-Traditional PoW protocols operate poorly when blocktimes are set too low. These issues include:
+Traditional Proof-of-Work protocols operate poorly when blocktimes are set too low. These issues include:
 
 * Orphan Blocks and wasted disk space
 * Increased bandwidth
 * More/longer forks, and even longer re-org time
-* A greater portion of the hashing power is gone to waste
+* A greater portion of wasteful hashing power
 
 <b>Benefits of faster block times in the Rublix Blockchain:</b>
 
-* Ability to handle a higher volume of transactions thanks to its blazing fast block generation.
-* Reduction of risk when it comes to double spending attacks.
+* Ability to handle a higher volume of transactions due to expeditious block generation.
+* Reduction of risk as it relates to double spending attacks.
 
-We anticipate new validators to be invite only by existing block creators.
+We anticipate new validators to be by invitation only by existing block creators.
 
 <p align="center">
 <img src="https://i.imgur.com/O36HpQ3.png">
 </p>
 
-As the network continues to grow and more resources are required to scale, validators will be brought in via invite only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. The contract will be part of the blockchain state. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
+As the network continues to grow and more resources are required to scale, validators will be added by invitation only. A smart contract will be used to facilitate and confirm the admission of newly appointed validators. The contract will be part of the blockchain state. Existing validators will be held responsible for whom they bring onto the network. By being a block producer and having the ability to earn transaction fees, there is an expectation of assisting with the chain advancement when required.
 
 ### Scaling Only When Needed
 
@@ -122,7 +122,7 @@ When the chain requires scaling, we use the 'Validator Nomination' smart contrac
 
 ### Economic Sustainability
 
-Validators will start to create blocks and generate a fixed reward for securing the network. For every block generated, a validator who created it will receive all transaction fees. Every validator has the same opportunity to create a block.
+Validators will start to create blocks and generate a fixed reward for securing the network. For every block generated, the validator who created it will receive all transaction fees. Every validator has the same opportunity to create a block.
 
 ### Block Rewards
 
@@ -130,19 +130,29 @@ There are no plans on utilizing a block reward mechanism like Ethereum and Bitco
 
 ### Upgrading & Maintaining the Protocol
 
-Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent amount of time with no software issues, the validators will then be able to extend invites to the public. This method will allow us to test the network and its validators sufficently and prevent hard forks from occuring at early stages.
+Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent amount of time with no software issues, the validators will then be able to extend invites to the public. This method will allow Rublix to test the network and its validators sufficently and prevent hard forks from occuring at early stages.
 
 1. Validators acknowledge a change is being requested to the software.
-2. Validators propose a change to the constitution and obtains 66% approval.
+2. Validators propose a change to the constitution and obtain 66% approval.
 3. Validators maintain 66% approval for 14 consecutive days (2 weeks).
 4. By default configuration of the Rublix Blockchain software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
 5. All validators that do not upgrade to the new code shut down automatically.
 
 In case of emergency situations, validators may accelerate the process if a bug fix or software update is required to fix an extemely critical, time-sensitive issue.
 
+### Other Distinctions
+
+#### Economical Network
+
+The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network's security will also be lower due to considerably lower market cap. 
+
+#### No Miners
+
+Due to consensus lying in the validators (nodes) with no mining required, scalibility concerns subside as transactions are not reliant on resource intensive confirmations.
+
 ### Governance Model
 
-The Rublix Blockchain implements a governance process that combines a hybrid Proof-of-Authority and Proof-of-Stake protocol. Initial validators on the Rublix platform must be chosen by the power of a select few in order to secure the network. In order for a user to become a validator, they must be invited by an authoritive figure and stake the same number of tokens as the existing validator who elected them. The agents' stake can be gifted or purchased on an exchange. This procedure ensures the newcomer is committed to becoming a trusted validator on the Rublix network. The Rublix Blockchain acknoledges that power lies within the token holders and initial validators. The validators are monitored and given limited authority to freeze accounts, perform updates, push bug fixes and propose changes that require a hard fork to the underlying protocol. Before any changes can be made to the blockchain, validators must approve the proposed modifications. If validators refuse to undertake the suggested changes made by the token holders, the proposals can be rejected. If validators make changes without permission of the token holders then all other non-producing full-node validators will decline the change.
+The Rublix Blockchain implements a governance process that combines a hybrid Proof-of-Authority and Proof-of-Stake protocol. Initial validators on the Rublix platform must be chosen by the power of a select few in order to secure the network. In order for a user to become a validator, they must be invited by an authoritative figure and stake the same number of tokens as the existing validator who elected them. The agents' stake can be gifted or purchased on an exchange. This procedure ensures the newcomer is committed to becoming a trusted validator on the Rublix network. The Rublix Blockchain acknowledges that power lies within the token holders and initial validators. The validators are monitored and given limited authority to freeze accounts, perform updates, push bug fixes and propose changes that require a hard fork to the underlying protocol. Before any changes can be made to the blockchain, validators must approve the proposed modifications. If validators refuse to undertake the suggested changes made by the token holders, the proposals can be rejected. If validators make changes without permission of the token holders then all other non-producing full-node validators will decline the change.
 
 # Market Data Validation Model
 
@@ -154,7 +164,7 @@ The Rublix Blockchain implements a governance process that combines a hybrid Pro
 
 ### Validator Weighting
 
-We anticpate a reputation algorithm to reward validators which are truthful and provide consistently accurate information. Validators with a higher reputation will be prioritized to provide data over its weaker brothers.
+We anticpate a reputation algorithm to reward truthful validators that provide consistently accurate information. Validators with a higher reputation will be prioritized to provide data over their weaker brothers.
 
 Rublix will attempt to provide reputable data on-chain by:
 
@@ -377,16 +387,6 @@ contract RublixBluePrintPriceUpdateContract is usingOraclize {
 //on daily basis mon-friday we want to update the ticker price in the contrct
 ````
 
-### Use Cases
-
-#### Economical Network
-
-The hybrid consensus model provides an inexpensive way to secure the network. Users can run existing DApps on the Rublix Blockchain and spend less money on transaction fees. Overall cost of the network's security will also be lower due to considerably lower market cap. 
-
-#### No Miners
-
-Due to consensus lying in the validators (nodes) with no mining required, scalibility concerns subside as transactions are not reliant on resource intensive confirmations.
-
 # Decentralized Applications
 
 Once the Rublix Blockchain is established, decentralized applications can be built on the platform that require trusted, on-chain financial data. We are building, testing and launching our initial finance related DApps on other chains before migrating onto the Rublix Blockchain.
@@ -401,7 +401,7 @@ Users who identify a trader with a high ranking and reputation can purchase thei
 
 #### Hedge v1: Smart Contract Integration (Blueprints)
 
-The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture on the Rublix Blockchain, which will handle all of our anticipated features. Meanwhile, the Rublix Blockchain will continue to be researched and developed giving Hedge and other Rublix projects ample room for growth.
+The first and official public release of Hedge (v1) will be in the form of an Ethereum based dApp. This will provide the groundwork necessary to release a fully functioning product utilizing our planned smart contract architecture on the Rublix Blockchain, which will handle all of the anticipated features.
 
 By incorporating smart contract capabilities, Hedge v1 allows for the facilitation of outcomes for analyst Blueprints. This system will be able to compare market predictions coded into each smart contract using Oracles, and then execute positive or negative rankings for the trader based on the end result of what took place in the market at a future point in time. Traders who correctly anticipate market movements will automatically be rewarded with positive ranking points on the Hedge platform based on the smart contract authority.
 
@@ -480,8 +480,8 @@ We will migrate from Rise to Genesis once our testnet is live and functioning ap
 
 The first release of the Rublix Blockchain will be established with 16 internal validators. The chain debut will feature several simple DApps and extensive public testing will occur.
 
-#### Token Swap
-  * A token swap will occur after the Rublix network is deployed, tested and deemed to be in a stable state by the Rublix audit committee and 3rd party consultants.
+####   Token Swap
+  A token swap will occur after the Rublix network is deployed, tested and deemed to be in a stable state by the Rublix audit committee and 3rd party consultants.
 ----
 #### Epilogue
 
@@ -495,7 +495,7 @@ The Hedge platform will be completely migrated onto the Rublix Blockchain. Subse
 
 The primary purpose for the RBLX token is to be used with the Hedge v1 platform while on the Ethereum network. It will allow for an easy transition to the token swap which will take place at a later date. 
 
-The Rublix token sold during the token sale will be identified as 'RBLX'. Rublix will not create any additional supply of tokens for the rewards pool. The fixed token supply created at genesis will reduce deflationary concerns and ultimately the market will decide the fair value of the token.
+The Rublix tokens issued during the token distribution event will be identified as 'RBLX'. Rublix will not create any additional supply of tokens for the rewards pool. The fixed token supply created at genesis will reduce deflationary concerns and ultimately the market will decide the fair value of the token.
 
 ### Reward Mechanism
 
