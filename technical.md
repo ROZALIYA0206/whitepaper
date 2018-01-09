@@ -6,10 +6,6 @@
 
 Until now, the primitive nature of blockchain technology and the lack of on-chain resources have hindered complex blockchain innovation and has posed restrictions on the development of exciting and elaborate DApps. Many blockchain architectures suffer from a number of issues: extensibility, scalability and on-chain data availability. We believe these problems stem from the relationship between two very important parts of the consensus architecture - canonicality and validity - being too closely associated. Furthermore, the use of Oracles adds a centralized party to manage off-chain data which defeats the true purpose of blockchains' core functionality.
 
-\begin{equation*}
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\end{equation*}
-
 This Rublix whitepaper introduces an architecture that integrates a strategic consensus method for reliable market data accessible on-chain.
 
 Rublix is proposing a trustless and decentralized blockchain that enables real-time market pricing data to be accessed on-chain while maintaining integrity by utilizing several data sources and a unique consensus agreement to determine accurate values. This gives traders, fund managers, investors and users of any kind the power to write smart contracts with the added ability of executing commands based on an underlying price of a stock, cryptocurrency, foreign exchange market, et al.
