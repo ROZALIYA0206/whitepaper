@@ -19,7 +19,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 * [Hybrid Consensus Model](#hybrid-consensus-model)
   * [Proof-of-Authority / Proof-of-Stake Model](#Proof-of-Authority-/-Proof-of-Stake-Model)
   * [Upgrading & Maintaining the Protocol](#upgrading-&-maintaining-the-protocol)
-  * [Use Cases](#use-cases)
+  * [Other Distinctions](#other-distinctions)
 * [Governance Model](#governance-model)
 * [Market Data Validation Model](#market-data-validation-model)
   * [Market Data Validation Diagram](#market-data-validation-diagram)
@@ -32,6 +32,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
     * [Hedge Version 2](#hedge-v2-proprietary-blockchain)
     * [Blueprint Smart Contract Details](#blueprint-smart-contract-details)
     * [Proof-of-Ranking Algorithm](#Proof-of-Ranking-Algorithm)
+    * [Spam and Manipulation](#Spam-and-Manipulation)
   * [Other Projects in Development](#Other-Projects-in-Development)
 * [Milestone Releases](#milestone-releases)
   * [Rise](#rise)
@@ -458,6 +459,28 @@ R(u,t) = f(u,t, w(t))
 ````
 
 Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
+
+##### Spam and Manipulation
+
+A key advantage of the Hedge platform compared to other trading platforms is the degree of difficulty it will present to spammers and manipulators, making the execution of such fraudulent activities perverse and impractical. Almost all traditional social media investing and sharing websites are plagued with fake upvotes, comments and followers.
+
+Many of these heavily manipulated sites are frequently used to carry out pump-and-dump schemes and therefore can pose a massive risk to new investors in the space. Rublix's core architecture is dependent on a complex algorithm that eliminates gaming and abuse.
+
+An integral element of spam prevention is the ability to detect anomalies, such as:
+
+1. Account Creation Spam:  Multiple accounts created by one person or a robot.
+
+2. Shilling:  Accounts used to artificially manipulate the perception of a person or product.
+
+3. Usage of Accounts:  Are the accounts only used to contribute to one person?
+
+Amongst the tools used to help us identify account legitimacy is Artificial Intelligence (AI):
+
+We build a base model from the data that asks the following question:
+
+    "What is the probability that the selected data is not an anomaly?"
+
+Employing this model that we built utilizing our data structure, we can differentiate if other examples are anomalous or not.
 
 ### Other Projects in Development
 
