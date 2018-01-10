@@ -32,7 +32,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
     * [Hedge Version 2](#hedge-v2-proprietary-blockchain)
     * [Blueprint Smart Contract Details](#blueprint-smart-contract-details)
     * [Proof-of-Ranking Algorithm](#Proof-of-Ranking-Algorithm)
-    * [Spam and Manipulation](#Spam-and-Manipulation)
+    * [Spam and Manipulation](#spam-and-manipulation)
   * [Other Projects in Development](#Other-Projects-in-Development)
 * [Milestone Releases](#milestone-releases)
   * [Rise](#rise)
