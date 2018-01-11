@@ -449,6 +449,20 @@ The remaining data will be automatically populated based on the fundamentals of 
 
 The Proof of Ranking algorithm is a propritary multi variable set of forumlas which assigns each trader on the platform an overall rank. 
 
+This scheme allows data to be indexed relative to importance and value. Our implementation of multiple variables within the algorithms will consist of numerous factors, a sampling of which are listed below as examples:    
+
+```
+1. Birth of account  
+2. Number of successful Blueprints  
+3. Viewership  
+4. Unique contributors
+5. Amount of RBLX earned
+6. Account age of contributors
+7. Streak
+```
+
+All these factors, among a proprietary list of others, are taken into consideration to output an assessment of users/data and distinguish a level of credibility for the platform and each user. 
+
 ##### Implementation
 
 The premise of the formula is to filter each individual and provide an accurate risk analysis on the user as they grow their track record.
@@ -497,7 +511,7 @@ We model each of the features by assuming each one is distributed according to a
 <img src="https://i.imgur.com/LOGJRTM.png">
 </p>
 
-Assuming that there are  n  features assumed for each training data,  p(x)p(x)  is: 
+Assuming that there are ` n ` features assumed for each training data, `p(x)p(x)`  is: 
 
 <p align="center">
 <img src="https://i.imgur.com/odZjQ5Y.png">
