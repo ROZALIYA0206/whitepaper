@@ -13,11 +13,11 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
 ### Table of Contents
 
 * [Blockchain Mission](#blockchain-mission)
-  * [Purpose & Functionality](#Purpose-&-Functionality)
+  * [Purpose & Functionality](#purpose--functionality)
   * [Quality of Information](#quality-of-information) 
   * [Scalability](#scalability)
 * [Hybrid Consensus Model](#hybrid-consensus-model)
-  * [Proof-of-Authority / Proof-of-Stake Model](#Proof-of-Authority-/-Proof-of-Stake-Model)
+  * [Proof-of-Authority / Proof-of-Stake Model](#proof-of-authority--proof-of-stake-model)
   * [Upgrading & Maintaining the Protocol](#upgrading-&-maintaining-the-protocol)
   * [Other Distinctions](#other-distinctions)
 * [Governance Model](#governance-model)
@@ -31,7 +31,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
     * [Hedge Version 1](#hedge-v1-smart-contract-integration-blueprints)
     * [Hedge Version 2](#hedge-v2-proprietary-blockchain)
     * [Blueprint Smart Contract Details](#blueprint-smart-contract-details)
-    * [Proof-of-Ranking Algorithm](#Proof-of-Ranking-Algorithm)
+    * [Proof-of-Ranking Algorithm](#proof-of-ranking-algorithm)
     * [Spam and Manipulation](#spam-and-manipulation)
   * [Other Projects in Development](#Other-Projects-in-Development)
 * [Milestone Releases](#milestone-releases)
