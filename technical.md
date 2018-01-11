@@ -42,6 +42,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
   * [Purpose](#purpose)
   * [Reward Mechanism](#reward-mechanism)
 * [Disclaimer](#disclaimer)
+* [References](#references)
 
 # Blockchain Mission
 
@@ -86,9 +87,9 @@ Max Supply: 100 million
 Algorithm: Aura
 ```
 
-As tested on the Kovan network and Parity recommendation:
+As tested on the Kovan network[[1](https://github.com/kovan-testnet/proposal)] and Parity recommendation:
 
-> Simple and fast consensus algorithm, each validator gets an assigned time slot in which they can release a block. The time slots are determined by the system clock of each validator.[[1](https://paritytech.github.io/wiki/Aura)]
+> Simple and fast consensus algorithm, each validator gets an assigned time slot in which they can release a block. The time slots are determined by the system clock of each validator.[[2](https://paritytech.github.io/wiki/Aura)]
 
 <b>Issues with a faster block time in traditional protocols:</b>
 
@@ -482,6 +483,28 @@ We build a base model from the data that asks the following question:
 
 Employing this model that we built utilizing our data structure, we can differentiate if other examples are anomalous or not.
 
+Having built this model, we can assume: 
+
+<p align="left">
+<img src="https://i.imgur.com/mynsyyX.png">
+</p>
+
+ε = is a probability value which we deﬁne depending on our needs.  
+
+We model each of the features by assuming each one is distributed according to a normal distribution:
+
+<p align="center">
+<img src="https://i.imgur.com/LOGJRTM.png">
+</p>
+
+Assuming that there are  n  features assumed for each training data,  p(x)p(x)  is: 
+
+<p align="center">
+<img src="https://i.imgur.com/odZjQ5Y.png">
+</p>
+
+We now have a group of data which ﬁts valid interactions and can continue to ﬁlter the data  through more validity tests.
+
 ### Other Projects in Development
 
 Rublix, as well as its partners, are also developing other innovative applications which are currently under internal R&D. Unlike Hedge, these DApps may not be publicly disclosed and/or launched on other blockchains before launching on the Rublix Blockchain. 
@@ -536,4 +559,5 @@ Copyright (c) 2018 Rublix Without permission, anyone may use, reproduce or distr
 
 # References
 
-1. Aura (Authority Round) is a pluggable Blockchain consensus algorithm - Parity - https://paritytech.github.io/wiki/Aura
+1. Kovan - A Stable Ethereum Public Testnet - Parity - https://github.com/kovan-testnet/proposal
+2. Aura (Authority Round) is a pluggable Blockchain consensus algorithm - Parity - https://paritytech.github.io/wiki/Aura
