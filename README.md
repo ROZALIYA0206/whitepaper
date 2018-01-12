@@ -475,7 +475,7 @@ R(u,t) = f(u,t, w(t))
 
 Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
 
-##### Ranking and Valuating Blueprint
+##### Ranking and Valuating Blueprint Contracts
 
 A general Proof-of-Performance model is used to determine the amplitude of change in a blueprint’s dynamic pricing value. The below factors will be used to determine the impact on valuation:
 
