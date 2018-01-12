@@ -33,7 +33,7 @@ Rublix is proposing a trustless and decentralized blockchain that enables real-t
     * [Blueprint Smart Contract Details](#blueprint-smart-contract-details)
     * [Proof-of-Ranking Algorithm](#proof-of-ranking-algorithm)
     * [Spam and Manipulation](#spam-and-manipulation)
-  * [Other Projects in Development](#Other-Projects-in-Development)
+  * [Other Projects in Development](#other-projects-in-development)
 * [Milestone Releases](#milestone-releases)
   * [Rise](#rise)
   * [Genesis](#genesis)
