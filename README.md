@@ -475,6 +475,22 @@ R(u,t) = f(u,t, w(t))
 
 Where w(t) is a real-valued scalar weighting function, independent of the user u, and only depending on the time.
 
+##### Ranking and Valuating Blueprint
+
+A general Proof-of-Performance model is used to determine the amplitude of change in a blueprint’s dynamic pricing value. The below factors will be used to determine the impact on valuation:
+
+```
+m = multiplier
+r = current ranking
+k = target ranking
+a = contract demand
+g = potential gain (in %)
+t = time until Blueprint expires
+```
+
+_Note:_ The formulas we have developed are continually being optimized and will be updated within this document when the ﬁnal variables and structures are decided upon. 
+
+
 ##### Spam and Manipulation
 
 A key advantage of the Hedge platform compared to other trading platforms is the degree of difficulty it will present to spammers and manipulators, making the execution of such fraudulent activities perverse and impractical. Almost all traditional social media investing and sharing websites are plagued with fake upvotes, comments and followers.
