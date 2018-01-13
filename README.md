@@ -64,7 +64,7 @@ Disruptive centralized projects like Facebook, Uber and Youtube all handle milli
 
 ### Proof-of-Authority / Proof-of-Stake Model
 
-The Proof-of-Authority model provides one of the highest levels of security, as an attacker with unwanted connection or hacked authority can not overwhelm the entire network by potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
+The Proof-of-Authority model provides one of the highest levels of security, as an attacker with unwanted connection or hacked authority cannot overwhelm the entire network by potentially reverting or disrupting all transactions. By initially allowing a trusted set of individuals to validate blocks, we dramatically lower the risk of malicious nodes trying to alter the chain with false information.
 
 To start the chain, we will assign 16 internal validators to secure the network. This number of initial validators will be sufficient to operate the chain diligently. 
 
@@ -115,7 +115,7 @@ As the network continues to grow and more resources are required to scale, valid
 
 ### Scaling Only When Needed
 
-When the chain requires scaling, we use the 'Validator Nomination' smart contract to decided which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
+When the chain requires scaling, we use the 'Validator Nomination' smart contract to decide which existing validators will be responsible for bringing on new block creators. A smart contract will decide which validators will participate in the selection process.
 
 <p align="center">
 <img src="https://i.imgur.com/xS5cIPr.png">
@@ -131,7 +131,7 @@ There are no plans on utilizing a block reward mechanism like Ethereum and Bitco
 
 ### Upgrading & Maintaining the Protocol
 
-Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficent amount of time with no software issues, the validators will then be able to extend invites to the public. This method will allow Rublix to test the network and its validators sufficently and prevent hard forks from occuring at early stages.
+Due to the nature of blockchains, hard forks, and bugs, the initial release of the Rublix Blockchain will retain a controlled group of validators for a period of 6 months. This period will allow the software to perform as normal but allow the development team to retain control of upgrading software quickly. After a sufficient amount of time with no software issues, the validators will then be able to extend invites to the public. This method will allow Rublix to test the network and its validators sufficiently and prevent hard forks from occurring at early stages.
 
 1. Validators acknowledge a change is being requested to the software.
 2. Validators propose a change to the constitution and obtain 66% approval.
@@ -139,7 +139,7 @@ Due to the nature of blockchains, hard forks, and bugs, the initial release of t
 4. By default configuration of the Rublix Blockchain software, the process of updating the blockchain to add new features takes 2 to 3 months, while updates to fix non-critical bugs that do not require changes to the constitution can take 1 to 2 months.
 5. All validators that do not upgrade to the new code shut down automatically.
 
-In case of emergency situations, validators may accelerate the process if a bug fix or software update is required to fix an extemely critical, time-sensitive issue.
+In case of emergency situations, validators may accelerate the process if a bug fix or software update is required to fix an extremely critical, time-sensitive issue.
 
 ### Other Distinctions
 
@@ -149,7 +149,7 @@ The hybrid consensus model provides an inexpensive way to secure the network. Us
 
 #### No Miners
 
-Due to consensus lying in the validators (nodes) with no mining required, scalibility concerns subside as transactions are not reliant on resource intensive confirmations.
+Due to consensus lying in the validators (nodes) with no mining required, scalability concerns subside as transactions are not reliant on resource intensive confirmations.
 
 ### Governance Model
 
@@ -165,7 +165,7 @@ The Rublix Blockchain implements a governance process that combines a hybrid Pro
 
 ### Validator Weighting
 
-We anticpate a reputation algorithm to reward truthful validators that provide consistently accurate information. Validators with a higher reputation will be prioritized to provide data over their weaker brothers.
+We anticipate a reputation algorithm to reward truthful validators that provide consistently accurate information. Validators with a higher reputation will be prioritized to provide data over their weaker brothers.
 
 Rublix will attempt to provide reputable data on-chain by:
 
@@ -385,7 +385,7 @@ contract RublixBluePrintPriceUpdateContract is usingOraclize {
 }
 
 
-//on daily basis mon-friday we want to update the ticker price in the contrct
+//on daily basis mon-friday we want to update the ticker price in the contract
 ````
 
 # Decentralized Applications
@@ -416,7 +416,7 @@ Hedge v2, which is planned for a late-2018 release, will run off Rublix's core b
 
 * Full empowerment, customization and control for future updates and integrations to the Hedge platform, as well as the ability to build out more complex features.
 
-* Real-time market data will allow Blueprints to be solved on-chain automatically withouth the need for an Oracle.
+* Real-time market data will allow Blueprints to be solved on-chain automatically without the need for an Oracle.
 
 * A reduction in dependency on the Ethereum network and its inherent limitations.
 
@@ -447,7 +447,7 @@ The remaining data will be automatically populated based on the fundamentals of 
 
 ##### Overview
 
-The Proof of Ranking algorithm is a propritary multi variable set of forumlas which assigns each trader on the platform an overall rank. 
+The Proof of Ranking algorithm is a proprietary multi variable set of formulas which assigns each trader on the platform an overall rank. 
 
 This scheme allows data to be indexed relative to importance and value. Our implementation of multiple variables within the algorithms will consist of numerous factors, a sampling of which are listed below as examples:    
 
